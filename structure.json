@@ -1,0 +1,587 @@
+{
+ "respondent_name_col": 1,
+ "demographics": {
+  "age": 2,
+  "gender": 3,
+  "tenure": 4,
+  "board_training": 5,
+  "right_size": 11,
+  "ideal_size": 12
+ },
+ "scale": {
+  "min": 0,
+  "max": 5
+ },
+ "yes_no_items": [
+  16
+ ],
+ "conditional_items": {
+  "17": 16
+ },
+ "diversity_items": {
+  "passende_mangfoldighed": 6,
+  "fokus_paa_mangfoldighed": 7,
+  "planlaegning_udskiftning": 8,
+  "forberedelse_nye": 9,
+  "maaltal_koen": 10
+ },
+ "general_work": [
+  {
+   "label": "Beslutningsprocesser",
+   "cols": [
+    13,
+    14,
+    15,
+    17
+   ]
+  },
+  {
+   "label": "Konflikthåndtering",
+   "cols": [
+    18,
+    19
+   ]
+  },
+  {
+   "label": "Rolle- og ansvarsfordeling",
+   "cols": [
+    20,
+    21,
+    22,
+    23
+   ]
+  },
+  {
+   "label": "Tidsstyring",
+   "cols": [
+    24,
+    25,
+    26
+   ]
+  },
+  {
+   "label": "Bestyrelseslederens virke",
+   "cols": [
+    27,
+    28,
+    29,
+    30
+   ]
+  },
+  {
+   "label": "Bestyrelsesmateriale",
+   "cols": [
+    31,
+    32,
+    33,
+    34,
+    35
+   ]
+  },
+  {
+   "label": "Bestyrelsesmøderne",
+   "cols": [
+    36,
+    37,
+    38
+   ]
+  }
+ ],
+ "thematic_work": [
+  {
+   "label": "Finansiel og økonomi",
+   "cols": [
+    39,
+    40
+   ]
+  },
+  {
+   "label": "Risikostyring",
+   "cols": [
+    41,
+    42
+   ]
+  },
+  {
+   "label": "Forretningsudvikling",
+   "cols": [
+    43,
+    44
+   ]
+  },
+  {
+   "label": "Direktionen",
+   "cols": [
+    45,
+    46,
+    47
+   ]
+  },
+  {
+   "label": "Organisatoriske forhold",
+   "cols": [
+    48
+   ]
+  },
+  {
+   "label": "Juridiske forhold",
+   "cols": [
+    49
+   ]
+  },
+  {
+   "label": "Markedet og internationalisering",
+   "cols": [
+    50,
+    51
+   ]
+  },
+  {
+   "label": "Digitalisering og teknologi",
+   "cols": [
+    52
+   ]
+  },
+  {
+   "label": "Bæredygtighed og ESG",
+   "cols": [
+    53,
+    54,
+    55,
+    56,
+    57
+   ]
+  }
+ ],
+ "ranking_col": 58,
+ "priority_alignment_col": 59,
+ "team_competence_col": 127,
+ "independence_cols": [
+  128,
+  129,
+  130,
+  131,
+  132,
+  133,
+  134
+ ],
+ "peer_rating_blocks": {
+  "Aktivt bidrag": 135,
+  "Viden og kompetencer": 144,
+  "Deler tanker, indsigter og perspektiver": 153,
+  "Samarbejdsvillig, konstruktiv og reflekteret": 162
+ },
+ "peer_block_size": 8,
+ "competency_areas": [
+  {
+   "area": "Bestyrelsesdiciplin",
+   "subareas": [
+    {
+     "label": "Uafhængighed og objektivitet",
+     "cols": [
+      60,
+      61
+     ]
+    },
+    {
+     "label": "Evaluering og udvikling",
+     "cols": [
+      62,
+      63
+     ]
+    }
+   ]
+  },
+  {
+   "area": "Ledelse og ledelsesudvikling",
+   "subareas": [
+    {
+     "label": "Behovsidentifikation og udvikling",
+     "cols": [
+      64,
+      65
+     ]
+    },
+    {
+     "label": "Tilsyn og rådgivning af direktion",
+     "cols": [
+      66
+     ]
+    }
+   ]
+  },
+  {
+   "area": "Organisatoriske forhold",
+   "subareas": [
+    {
+     "label": "Organisationsudvikling",
+     "cols": [
+      67,
+      68
+     ]
+    },
+    {
+     "label": "Talentudvikling og succession planning",
+     "cols": [
+      69,
+      70
+     ]
+    },
+    {
+     "label": "Kulturel ledelse",
+     "cols": [
+      71,
+      72
+     ]
+    }
+   ]
+  },
+  {
+   "area": "Forretningsudvikling",
+   "subareas": [
+    {
+     "label": "Markedsanalyse og trendidentifikation",
+     "cols": [
+      73,
+      74,
+      75
+     ]
+    },
+    {
+     "label": "Strategiudvikling",
+     "cols": [
+      76,
+      77
+     ]
+    },
+    {
+     "label": "Strategi-implementering",
+     "cols": [
+      78,
+      79
+     ]
+    }
+   ]
+  },
+  {
+   "area": "Risikostyring",
+   "subareas": [
+    {
+     "label": "Risikoidentifikation",
+     "cols": [
+      80
+     ]
+    },
+    {
+     "label": "Risikovurdering",
+     "cols": [
+      81
+     ]
+    },
+    {
+     "label": "Risikostyring",
+     "cols": [
+      82
+     ]
+    }
+   ]
+  },
+  {
+   "area": "Lovgivning og juridiske aspekter",
+   "subareas": [
+    {
+     "label": "Rådgivning",
+     "cols": [
+      83
+     ]
+    },
+    {
+     "label": "Identifikation og evaluering af juridiske risici",
+     "cols": [
+      84
+     ]
+    }
+   ]
+  },
+  {
+   "area": "Finansiel og økonomi",
+   "subareas": [
+    {
+     "label": "Fusioner, opkøb og partnerskaber",
+     "cols": [
+      85,
+      86
+     ]
+    },
+    {
+     "label": "Kapitalstyring og finansiering",
+     "cols": [
+      87
+     ]
+    },
+    {
+     "label": "Økonomisk analyse og rapportering",
+     "cols": [
+      88,
+      89
+     ]
+    },
+    {
+     "label": "Økonomisk planlægning og overvågning",
+     "cols": [
+      90
+     ]
+    }
+   ]
+  },
+  {
+   "area": "Interessenter og stakeholdermanagement",
+   "subareas": [
+    {
+     "label": "Interessentidentifikation og -kortlægning",
+     "cols": [
+      91
+     ]
+    },
+    {
+     "label": "Kommunikation med interessenter",
+     "cols": [
+      92
+     ]
+    },
+    {
+     "label": "Beslutningspåvirkning",
+     "cols": [
+      93
+     ]
+    }
+   ]
+  },
+  {
+   "area": "Digitalisering og teknologi",
+   "subareas": [
+    {
+     "label": "Digitale teknologier og deres anvendelsesområder",
+     "cols": [
+      94,
+      95
+     ]
+    },
+    {
+     "label": "Digital strategi og transformation",
+     "cols": [
+      96,
+      97,
+      98
+     ]
+    },
+    {
+     "label": "Datastrategier og datastyring",
+     "cols": [
+      99,
+      100
+     ]
+    },
+    {
+     "label": "Cybersikkerhed og databeskyttelse",
+     "cols": [
+      101,
+      102
+     ]
+    }
+   ]
+  },
+  {
+   "area": "Bæredygtighed og ESG",
+   "subareas": [
+    {
+     "label": "E",
+     "cols": [
+      104,
+      105
+     ]
+    },
+    {
+     "label": "S",
+     "cols": [
+      106,
+      107
+     ]
+    },
+    {
+     "label": "G",
+     "cols": [
+      108
+     ]
+    },
+    {
+     "label": "ESG-samlet",
+     "cols": [
+      103,
+      109
+     ]
+    }
+   ]
+  },
+  {
+   "area": "Internationalisering",
+   "subareas": [
+    {
+     "label": "Distributionskanaler og partnerskaber",
+     "cols": [
+      110
+     ]
+    },
+    {
+     "label": "Eksport- og importstrategier",
+     "cols": [
+      111
+     ]
+    },
+    {
+     "label": "Kulturel forståelse og tilpasning",
+     "cols": [
+      112,
+      113
+     ]
+    },
+    {
+     "label": "Juridiske tilpasninger og overholdelse",
+     "cols": [
+      114,
+      115
+     ]
+    }
+   ]
+  }
+ ],
+ "area_ratings": {
+  "Bestyrelsesdiciplin": 116,
+  "Organisatoriske forhold": 117,
+  "Ledelse og ledelsesudvikling": 118,
+  "Interessenter og stakeholdermanagement": 119,
+  "Forretningsudvikling": 120,
+  "Risikostyring": 121,
+  "Juridiske forhold": 122,
+  "Økonomistyring": 123,
+  "Internationalisering": 124,
+  "Digitalisering og teknologi": 125,
+  "Bæredygtighed og ESG": 126
+ },
+ "questions": {
+  "2": "Hvad er din alder?",
+  "3": "Hvilken køn identificerer du sig som?",
+  "4": "Hvor mange års anciennitet har du i bestyrelsen?",
+  "5": "Har du en bestyrelsesuddannelse?",
+  "6": "Jeg oplever, at bestyrelsen har en passende mangfoldighed?",
+  "7": "Jeg oplever, at vi har et passende fokus på og løbende drøfter mangfoldighed og diversitet i bestyrelsen?",
+  "8": "Jeg oplever, at vi løbende planlægger udskiftning, således at bestyrelsen er bredt sammensat med forskellige erfaringsniveauer og de rette kompetencer?",
+  "9": "Jeg oplever, at vi kontinuerligt forbereder nye bestyrelsesmedlemmer, således at nye kandidater er klar, når der skal udskiftes?",
+  "10": "Jeg oplever, at vi i bestyrelsen aktivt arbejder med måltal for det underrepræsenterede køn?",
+  "11": "Jeg oplever, at bestyrelsen består af det rigtige antal personer?",
+  "12": "Hvor mange mener du, der bør sidde i bestyrelsen?",
+  "13": "Jeg oplever, at det er legitimt at sige sin mening.",
+  "14": "Jeg oplever, at drøftelserne i bestyrelsen er kendetegnet ved at være åbne, fordomsfrie og afvikles i en god og tillidsfuld atmosfære.",
+  "15": "Jeg oplever, at bestyrelsen generelt er åbne og lydhør overfor andres ideer.",
+  "16": "I vores bestyrelse har vi skriftligt nedskrevne spilleregler og en forretningsorden.",
+  "17": "Jeg oplever, at alle bestyrelsesmedlemmerne er bekendt med og følger de nedskrevne spilleregler og forretningsorden, som er vedtaget af vores bestyrelse.",
+  "18": "Jeg oplever, at bestyrelsen generelt er i stand til at modtage individuel feedback.",
+  "19": "Jeg oplever, at bestyrelsen evner at håndtere interne konflikter og uenigheder og i fællesskab finde konstruktive løsninger.",
+  "20": "Jeg oplever generelt, at medlemmernes kompetencer og erfaringer bliver udnyttet på en hensigtsmæssig måde i vores arbejde/samarbejde/projekter.",
+  "21": "Jeg oplever, at vi i tilstrækkelig grad arbejder i udvalg, arbejdsgrupper og/eller komiteer med konkrete opgaver og mål for at fremme effektiviteten og kvaliteten af bestyrelsens arbejde.",
+  "22": "Jeg oplever, at der er overensstemmelse mellem de formelle hierarkiske strukturer og den reelle praksis, når vi f.eks. skal tage beslutninger og fordele ansvar i bestyrelsen.",
+  "23": "Jeg oplever, at der er en tydelig og meningsfuld rolle- og ansvarsfordeling blandt bestyrelsens medlemmer.",
+  "24": "Jeg oplever, at vi i bestyrelsen bruger tiden på meningsgivende drøftelser, at træffe beslutninger og lign. aktiviteter, som ikke ville kunne gøres mellem møderne.",
+  "25": "Jeg oplever, at jeg har den nødvendige tid til at kunne deltage i alle relevante møder og aktiviteter, forberede mig ordentligt til møderne og udføre de nødvendige opgaver og ansvarsområder som bestyrelsesmedlem.",
+  "26": "Jeg oplever generelt, at bestyrelsmedlemmerne deltager til møderne og har afsat den nødvendige tid til forberedelse og arbejde mellem møderne.",
+  "27": "Jeg oplever, at bestyrelseslederen lever fuldt op til sin opgave.",
+  "28": "Jeg oplever, at bestyrelseslederen er lydhør, giver plads til alle og er konstruktiv.",
+  "29": "Jeg oplever, at bestyrelseslederens mødeledelse er effektiv og pragmatisk.",
+  "30": "Jeg oplever, at bestyrelseslederen sikrer sig, at relevant dokumentation, data og analyser er tilgængelige, når der træffes beslutninger i bestyrelsen.",
+  "31": "Jeg oplever, at vi får materialet forud for bestyrelsesmøderne i tilstrækkelig god tid til, at vi kan forberede os og sætte os ind i indholdet.",
+  "32": "Jeg oplever, at bestyrelsesmaterialet er relevant.",
+  "33": "Jeg oplever, at bestyrelsesmaterialet er forståelig.",
+  "34": "Jeg oplever, at kvaliteten og omfanget af bestyrelsesmaterialet er således, at jeg er velinformeret og kvalificeret til at træffe beslutninger på bestyrelsesmøderne.",
+  "35": "Jeg oplever, at bestyrelsen generelt læser og sætter sig grundigt ind i bestyrelsesmaterialet forud for bestyrelsesmøderne.",
+  "36": "Jeg oplever, at bestyrelsesmøderne har den rette længde.",
+  "37": "Jeg oplever, at bestyrelsesmøderne holdes med en passende frekvens.",
+  "38": "Jeg oplever, at antallet af bestyrelsesmøder er passende.",
+  "39": "Jeg oplever, at bestyrelsen løbende opstiller mål og forventninger til virksomhedens finansielle situation.",
+  "40": "Jeg oplever, at bestyrelsen løbende følger op på virksomhedens finansielle situation.",
+  "41": "Jeg oplever, at bestyrelsen løbende identificerer, evaluerer og diskuterer forskelige ricisi, som kan påvirke virksomheden.",
+  "42": "Jeg oplever, at bestyrelsen sikre sig, at virksomheden har passende organisatoriske og tekniske foranstaltninger på plads i relation til IT- og cyberrisici.",
+  "43": "Jeg oplever, at bestyrelsen evner at sikre en strategi for virksomhedens lang- og kortsigtede udvikling",
+  "44": "Jeg oplever, at bestyrelsen bidrager til virksomhedens værdiskabelse gennem f.eks. strategisk planlægning, beslutningstagning og implementering af initiativer, der fremmer virksomhedens mål og resultater.",
+  "45": "Jeg oplever, at bestyrelsen har det bedst mulige samarbejde med direktionen, og at samarbejdet er værdiskabende for direktionens daglige arbejde i virksomheden.",
+  "46": "Jeg oplever, at bestyrelsen løbende evaluerer direktionens arbejde, resulater og sammensætning",
+  "47": "Jeg oplever, at der er klarhed og enighed omkring ansvars- og opgavefordeling mellem bestyrelsen og direktionen.",
+  "48": "Jeg oplever, at bestyrelsen løbende beskæftiger sig med virksomhedens organisatoriske forhold og medarbejdersammensætning (ledere, kritiske kompetencer, medarbejderstrategi mv.)",
+  "49": "Jeg oplever, at bestyrelsen løbende har øje for og beskæftiger sig med, at virksomheden lever op til gældende lovgivning.",
+  "50": "Jeg oplever, at bestyrelsens løbende holdes opdateret på ændringer i markedet hvorpå virksomhed opererer - både nationalt og internationalt.",
+  "51": "Jeg oplever, at bestyrelsen løbende beskæftiger sig med relevante nye potentielle markeder eller markedsandele - både nationalt og internationalt.",
+  "52": "Jeg oplever, at bestyrelsen løbende arbejder med en klar og veldefineret digital strategi, der er i tråd med virksomhedens overordnede mål og værdiskabelse.",
+  "53": "Jeg oplever, at bestyrelsen integrerer bæredygtighed i virksomhedens overordnede strategi.",
+  "54": "Jeg oplever, at bestyrelsen løbende holdes opdateret på virksomhedens ESG-rapporteringsarbejde og måltal i relation hertil.",
+  "55": "Jeg oplever, at bestyrelsen aktivt beskæftiger sig med, hvordan virksomhedens miljøpåvirkning kan reduceres.",
+  "56": "Jeg oplever, at bestyrelsen beskæftiger sig aktivt med social bæredygtighed, både internt i virksomheden og i værdikæden.",
+  "57": "Jeg oplever, at bestyrelsen aktivt beskæftiger sig med at sikre transparens og ansvarlighed i virksomhedens ledelse.",
+  "58": "Du bedes prioritere nedenstående temaer efter, hvad du mener er vigtigst, at bestyrelsen beskæftiger sig med på nuværende tidspunkt.",
+  "59": "I hvilken grad oplever du, at bestyrelsens nuværende prioritering og fokus følger den prioriterede rækkefølge, som du netop har angivet?",
+  "60": "Jeg har stor erfaring med og er i stand til at opretholde uafhængighed og objektivitet i bestyrelsesarbejdet.",
+  "61": "Jeg er dygtig til at træffe beslutninger baseret på objektive analyser og vurderinger, og lader mig ikke drive af intuition og mavefornemmelser.",
+  "62": "Jeg har betydelig erfaring med evaluering af strategiske beslutninger og det arbejde en bestyrelse udfører.",
+  "63": "Jeg er dygtig til at identificere og implementere forbedringer i bestyrelsens arbejdsprocesser.",
+  "64": "Jeg har stor erfaring med at lede og udvikle medarbejdere på strategisk niveau.",
+  "65": "Jeg har indgående viden om og erfaring med at identificere ledelsesmæssige behov for dermed at kunne indsætte den korrekte leder.",
+  "66": "Jeg har solid erfaring med effektivt tilsyn af og rådgivning til direktion og ledelsesteams med henblik på at bidrage til deres udvikling og succes.",
+  "67": "Jeg har indgående viden om og erfaring med at identificere effektive organisatoriske strukturer, processer og politikker, der understøtter virksomhedens vækst, mål og behov.",
+  "68": "Jeg har solid erfaring med at implementere organisatoriske strukturer, processer og politikker, der effektivt og succesfuldt understøtter virksomhedens strategi for organisationsudvikling.",
+  "69": "Jeg har indgående viden om og erfaring med at identificere tiltag og sammensætte processer, der kan tiltrække, udvikle og fastholde talentfulde medarbejdere.",
+  "70": "Jeg har solid erfaring med at udvikle en strategi for og implementere tiltag i relation til udskiftningsplanlægning og videregivelse af ledelsesroller.",
+  "71": "Jeg har indgående viden om og erfaring med at udarbejde og implementere tiltag, der med succes fremmer en positiv og sund organisationskultur.",
+  "72": "Jeg har indgående kendskab til organisationens kultur og værdier og arbejder aktivt på at fremme dem.",
+  "73": "Jeg har stor erfaring med at analysere markedet og identificere trends, der påvirker virksomheden.",
+  "74": "Jeg har en dybdegående viden om branchen og er i stand til at give indsigt og perspektiver baseret på min erfaring.",
+  "75": "Jeg har indgående viden om og erfaring med at forstå og analysere kundens behov samt at omsætte dette til værdifulde produkter, tjenester mv.",
+  "76": "Jeg har indgående viden om og erfaring med at udvikle og implementere strategier, der sikrer en effektiv ressourceallokering og skaber værdi for virksomheden og dens interessenter.",
+  "77": "Jeg er i stand til at vurdere virksomhedens interne styrker og svagheder for at identificere områder, der kræver strategisk fokus og forbedring.",
+  "78": "Jeg er i stand til at rådgive i forhold til overvejelser og tiltag i forbindelse med strategiimplementering.",
+  "79": "Jeg er dygtig til at overvåge og evaluere implementeringen af strategiske initiativer.",
+  "80": "Jeg har indgående viden om og erfaring med at identificere forskellige typer af risici, der kan påvirke virksomheden.",
+  "81": "Jeg har erfaring med at vurdere og prioritere risikosandsynligheder samt potentiel indvirkning og konsekvenser for virksomheden på strategisk niveau.",
+  "82": "Jeg er i stand til at evaluere og give inputs til forbedring virksomhedens risikostyringsstrategi og -praksis.",
+  "83": "Jeg har en solid jurdisk baggrund og er i stand til at rådgive om jurdiske aspekter, der påvirker virksomheden.",
+  "84": "Jeg har betydelig ekspertise og praktisk erfaring med at identificere og evaluere juridiske risici, herunder om virksomheden overholder gældende lovgivning, kontraktlige forpligtelser og betydningen af ny lovgivning/regulering.",
+  "85": "Jeg har indgående viden om og erfaring med at identificere og vurdere potentielle fusioner, opkøb og partnerskaber.",
+  "86": "Jeg har omfattende viden om og erfaring med due-dilligence-processer.",
+  "87": "Jeg har indgående viden om forskellige kapitalstyringsmuligheder, herunder investering, finansiering og udbyttepolitik.",
+  "88": "Jeg kan med stor sikkerhed læse et virksomhedsregnskab.",
+  "89": "Jeg har dybdegående forståelse for økonomiske rapporter og kan analysere dem effektivt for at identificere økonomiske risici og muligheder.",
+  "90": "Jeg har omfattende viden om og erfaring med at identificere klare mål, vurdere budgetter og konsekvent at overvåge den økonomiske ydeevne for at sikre virksomhedens økonomiske sundhed og vækst.",
+  "91": "Jeg har indgående kendskab til at identificere og kortlægge både interne og eksterne interessenter og evner at forstå deres forventninger og påvirkninger på virksomheden",
+  "92": "Jeg har solid erfaring med effektivt at kommunikere virksomhedens strategi og mål til interessenterne.",
+  "93": "Jeg har erfaring med og formår at give kvalificerede inputs til, hvordan beslutninger vil påvirke relevante interessenter, og hvordan de vil reagere på disse beslutninger.",
+  "94": "Jeg har indgående viden om og indsigt i forskellige digitale teknologier og deres anvendelsesområder.",
+  "95": "Jeg har indgående viden om og erfaring med forskellige teknologiers potentielle indvirkning på virksomhedens aktiviteter og konkurrenceevne.",
+  "96": "Jeg har omfattende erfaring med at udvikle en virksomhedens digitale strategi.",
+  "97": "Jeg er har stort kendskab til mulige strategiske initiativer for digital transformation og implementering, samt faldgrupper og mulige udfodringer ved implementering.",
+  "98": "Jeg har stor erfaring med at evaluere og integrere nye teknologier i virksomhedens strategiske planer.",
+  "99": "Jeg har indgående viden om datastrategier.",
+  "100": "Jeg har dybdegående viden om og erfaring med at identificere og udnytte virksomhedens dataressourcer, herunder datagovernance, databeskyttelse og datadrevet beslutningstagning.",
+  "101": "Jeg har indgående viden om og forståelse for cybersikkerhedsrisici.",
+  "102": "Jeg har solid erfaring med at evaluere og håndtere trusler, rådgive om passende sikkerhedsforanstaltninger og at overholde databeskyttelseslovgivning.",
+  "103": "Jeg har stor erfaring med at integrere bæredygtighed i virksomhedens overordnede strategi.",
+  "104": "Jeg har omfattende erfaring med at rådgive om miljømæssige aspekter af ESG.",
+  "105": "Jeg er dygtig til at udvikle og implementere miljøstrategier, der reducerer virksomhedens miljøpåvirkning.",
+  "106": "Jeg har betydelig erfaring med at rådgive om sociale aspekter af ESG - både ift. interne forhold og forhold i virksomhedens værdikæde.",
+  "107": "Jeg er dygtig til at udvikle og implementere strategier, der fremmer social ansvarlighed.",
+  "108": "Jeg har stor erfaring med at rådgive om governance-aspekter af ESG.",
+  "109": "Jeg har indgående viden om og erfaring med evaluering og tilpasning af virksomhedens strukturer, processer og retningslinjer med henblik på at skabe transparens og skabe et solidt fundament for virksomhedens eksistens.",
+  "110": "Jeg besidder omfattende viden om og erfaring med valg af distributionskanaler, etablering af internationale partnerskaber og tilpasning af produkter og tjenester til at imødekomme globale markeders krav og præferencer.",
+  "111": "Jeg besidder en solid baggrund og praktisk erfaring inden for udvikling og implementering af strategier for eksport og import.",
+  "112": "Jeg er fortrolig med lokale normer, værdier og arbejdsmoral i forskellige kulturer og kan effektivt tilpasse virksomhedens strategi og praksis for at sikre vellykkede forretningsaktiviteter og etablering af bæredygtige relationer på tværs af kulturelle grænser.",
+  "113": "Jeg har omfattende ekspertise og erfaring med at håndtere kulturelle udfordringer i internationale forretningsaktiviteter.",
+  "114": "Jeg har erfaring med at håndtere juridiske tilpasninger i et internationalt perspektiv.",
+  "115": "Jeg er fortrolig med at navigere i komplekse juridiske landskaber og sikre, at virksomhedens aktiviteter er i overensstemmelse med lokale lovgivninger og regler på internationale markeder."
+ }
+}

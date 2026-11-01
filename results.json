@@ -1,0 +1,2438 @@
+{
+ "n": 10,
+ "names": [
+  "Kim Eksempel",
+  "Sam Fiktiv",
+  "Lee Testsen",
+  "Jo Demo",
+  "Max Prøvemann",
+  "Eva Syntetisk",
+  "Ole Dummy",
+  "Ida Mock",
+  "Rune Kunstig",
+  "Mia Modelsen"
+ ],
+ "method_notes": [
+  "Spredning = stikprøvens standardafvigelse (STDEV.S).",
+  "Anciennitet: gennemsnit over alle medlemmer (regnearket brugte F6:F12 og udelod to medlemmer).",
+  "Spørgsmålet om skriftlige spilleregler (ja/nej) indgår ikke i gennemsnit på 0-5-skalaen.",
+  "'Følger spillereglerne' beregnes kun for medlemmer, der har svaret (tomme svar tælles ikke som 0).",
+  "0 på 1-5-skalaen behandles som manglende svar (beslutning 2026-10-31); ikke-svar tælles ikke med i gennemsnit.",
+  "Kumuleret aldersfordeling divideres med antal medlemmer og ender derfor på 100 %."
+ ],
+ "period": {
+  "start": "2026-04-15T10:00:00",
+  "end": "2026-04-24T10:00:00"
+ },
+ "demographics": {
+  "age_mean": 57.3,
+  "age_min": 48,
+  "age_max": 68,
+  "age_bins": [
+   "[0:30[",
+   "[30:35[",
+   "[35:40[",
+   "[40:45[",
+   "[45:50[",
+   "[50:55[",
+   "[55:60[",
+   "[60:65[",
+   "[65:70[",
+   "[70:75[",
+   "[75:80[",
+   "[80:85[",
+   "[85:90["
+  ],
+  "age_counts": [
+   0,
+   0,
+   0,
+   0,
+   1,
+   3,
+   3,
+   1,
+   2,
+   0,
+   0,
+   0,
+   0
+  ],
+  "age_cum": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.1,
+   0.4,
+   0.7,
+   0.8,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "tenure_mean": 3.6,
+  "tenure_mode": 4,
+  "tenure_mode_count": 4,
+  "gender": {
+   "Mand": 7,
+   "Kvinde": 3
+  },
+  "board_training": 8,
+  "want_other_size": 1
+ },
+ "diversity": {
+  "passende_mangfoldighed": {
+   "n": 10,
+   "mean": 2.9,
+   "sd": 1.449137674618944,
+   "band": "Moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at bestyrelsen har en passende mangfoldighed?"
+  },
+  "fokus_paa_mangfoldighed": {
+   "n": 10,
+   "mean": 2.3,
+   "sd": 1.1595018087284057,
+   "band": "Lav til moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at vi har et passende fokus på og løbende drøfter mangfoldighed og diversitet i bestyrelsen?"
+  },
+  "planlaegning_udskiftning": {
+   "n": 10,
+   "mean": 3.4,
+   "sd": 1.6465452046971292,
+   "band": "Moderat til høj",
+   "spread": "Stor",
+   "question": "Jeg oplever, at vi løbende planlægger udskiftning, således at bestyrelsen er bredt sammensat med forskellige erfaringsniveauer og de rette kompetencer?"
+  },
+  "forberedelse_nye": {
+   "n": 10,
+   "mean": 2.8,
+   "sd": 1.398411797560202,
+   "band": "Moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at vi kontinuerligt forbereder nye bestyrelsesmedlemmer, således at nye kandidater er klar, når der skal udskiftes?"
+  },
+  "maaltal_koen": {
+   "n": 10,
+   "mean": 3.2,
+   "sd": 1.5491933384829668,
+   "band": "Moderat til høj",
+   "spread": "Stor",
+   "question": "Jeg oplever, at vi i bestyrelsen aktivt arbejder med måltal for det underrepræsenterede køn?"
+  }
+ },
+ "written_rules": {
+  "yes": 9,
+  "n": 10
+ },
+ "general_work": [
+  {
+   "label": "Beslutningsprocesser",
+   "n": 39,
+   "mean": 3.051282051282051,
+   "sd": 1.2967310711882996
+  },
+  {
+   "label": "Konflikthåndtering",
+   "n": 20,
+   "mean": 3.55,
+   "sd": 1.4317821063276355
+  },
+  {
+   "label": "Rolle- og ansvarsfordeling",
+   "n": 40,
+   "mean": 2.85,
+   "sd": 1.4597154622628448
+  },
+  {
+   "label": "Tidsstyring",
+   "n": 30,
+   "mean": 2.9,
+   "sd": 1.3982747990981972
+  },
+  {
+   "label": "Bestyrelseslederens virke",
+   "n": 40,
+   "mean": 3.05,
+   "sd": 1.5350603429214946
+  },
+  {
+   "label": "Bestyrelsesmateriale",
+   "n": 50,
+   "mean": 2.64,
+   "sd": 1.4534968390830747
+  },
+  {
+   "label": "Bestyrelsesmøderne",
+   "n": 30,
+   "mean": 2.8666666666666667,
+   "sd": 1.3578211078487255
+  }
+ ],
+ "items": [
+  {
+   "n": 10,
+   "mean": 3.0,
+   "sd": 1.247219128924647,
+   "band": "Moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at det er legitimt at sige sin mening.",
+   "section": "general_work",
+   "subarea": "Beslutningsprocesser",
+   "col": 13
+  },
+  {
+   "n": 10,
+   "mean": 2.8,
+   "sd": 1.398411797560202,
+   "band": "Moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at drøftelserne i bestyrelsen er kendetegnet ved at være åbne, fordomsfrie og afvikles i en god og tillidsfuld atmosfære.",
+   "section": "general_work",
+   "subarea": "Beslutningsprocesser",
+   "col": 14
+  },
+  {
+   "n": 10,
+   "mean": 2.8,
+   "sd": 1.4757295747452437,
+   "band": "Moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at bestyrelsen generelt er åbne og lydhør overfor andres ideer.",
+   "section": "general_work",
+   "subarea": "Beslutningsprocesser",
+   "col": 15
+  },
+  {
+   "n": 9,
+   "mean": 3.6666666666666665,
+   "sd": 1.0,
+   "band": "Moderat til høj",
+   "spread": "Lille",
+   "question": "Jeg oplever, at alle bestyrelsesmedlemmerne er bekendt med og følger de nedskrevne spilleregler og forretningsorden, som er vedtaget af vores bestyrelse.",
+   "section": "general_work",
+   "subarea": "Beslutningsprocesser",
+   "col": 17
+  },
+  {
+   "n": 10,
+   "mean": 4.0,
+   "sd": 0.9428090415820634,
+   "band": "Høj",
+   "spread": "Lille",
+   "question": "Jeg oplever, at bestyrelsen generelt er i stand til at modtage individuel feedback.",
+   "section": "general_work",
+   "subarea": "Konflikthåndtering",
+   "col": 18
+  },
+  {
+   "n": 10,
+   "mean": 3.1,
+   "sd": 1.728840330651992,
+   "band": "Moderat til høj",
+   "spread": "Stor",
+   "question": "Jeg oplever, at bestyrelsen evner at håndtere interne konflikter og uenigheder og i fællesskab finde konstruktive løsninger.",
+   "section": "general_work",
+   "subarea": "Konflikthåndtering",
+   "col": 19
+  },
+  {
+   "n": 10,
+   "mean": 2.7,
+   "sd": 1.766981104093143,
+   "band": "Moderat",
+   "spread": "Stor",
+   "question": "Jeg oplever generelt, at medlemmernes kompetencer og erfaringer bliver udnyttet på en hensigtsmæssig måde i vores arbejde/samarbejde/projekter.",
+   "section": "general_work",
+   "subarea": "Rolle- og ansvarsfordeling",
+   "col": 20
+  },
+  {
+   "n": 10,
+   "mean": 2.6,
+   "sd": 1.07496769977314,
+   "band": "Moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at vi i tilstrækkelig grad arbejder i udvalg, arbejdsgrupper og/eller komiteer med konkrete opgaver og mål for at fremme effektiviteten og kvaliteten af bestyrelsens arbejde.",
+   "section": "general_work",
+   "subarea": "Rolle- og ansvarsfordeling",
+   "col": 21
+  },
+  {
+   "n": 10,
+   "mean": 3.2,
+   "sd": 1.398411797560202,
+   "band": "Moderat til høj",
+   "spread": "Middel",
+   "question": "Jeg oplever, at der er overensstemmelse mellem de formelle hierarkiske strukturer og den reelle praksis, når vi f.eks. skal tage beslutninger og fordele ansvar i bestyrelsen.",
+   "section": "general_work",
+   "subarea": "Rolle- og ansvarsfordeling",
+   "col": 22
+  },
+  {
+   "n": 10,
+   "mean": 2.9,
+   "sd": 1.66332999331662,
+   "band": "Moderat",
+   "spread": "Stor",
+   "question": "Jeg oplever, at der er en tydelig og meningsfuld rolle- og ansvarsfordeling blandt bestyrelsens medlemmer.",
+   "section": "general_work",
+   "subarea": "Rolle- og ansvarsfordeling",
+   "col": 23
+  },
+  {
+   "n": 10,
+   "mean": 3.2,
+   "sd": 1.398411797560202,
+   "band": "Moderat til høj",
+   "spread": "Middel",
+   "question": "Jeg oplever, at vi i bestyrelsen bruger tiden på meningsgivende drøftelser, at træffe beslutninger og lign. aktiviteter, som ikke ville kunne gøres mellem møderne.",
+   "section": "general_work",
+   "subarea": "Tidsstyring",
+   "col": 24
+  },
+  {
+   "n": 10,
+   "mean": 2.3,
+   "sd": 1.4181364924121764,
+   "band": "Lav til moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at jeg har den nødvendige tid til at kunne deltage i alle relevante møder og aktiviteter, forberede mig ordentligt til møderne og udføre de nødvendige opgaver og ansvarsområder som bestyrelsesmedlem.",
+   "section": "general_work",
+   "subarea": "Tidsstyring",
+   "col": 25
+  },
+  {
+   "n": 10,
+   "mean": 3.2,
+   "sd": 1.3165611772087666,
+   "band": "Moderat til høj",
+   "spread": "Middel",
+   "question": "Jeg oplever generelt, at bestyrelsmedlemmerne deltager til møderne og har afsat den nødvendige tid til forberedelse og arbejde mellem møderne.",
+   "section": "general_work",
+   "subarea": "Tidsstyring",
+   "col": 26
+  },
+  {
+   "n": 10,
+   "mean": 3.0,
+   "sd": 1.4907119849998598,
+   "band": "Moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at bestyrelseslederen lever fuldt op til sin opgave.",
+   "section": "general_work",
+   "subarea": "Bestyrelseslederens virke",
+   "col": 27
+  },
+  {
+   "n": 10,
+   "mean": 3.0,
+   "sd": 1.8257418583505538,
+   "band": "Moderat",
+   "spread": "Stor",
+   "question": "Jeg oplever, at bestyrelseslederen er lydhør, giver plads til alle og er konstruktiv.",
+   "section": "general_work",
+   "subarea": "Bestyrelseslederens virke",
+   "col": 28
+  },
+  {
+   "n": 10,
+   "mean": 3.4,
+   "sd": 1.4298407059684812,
+   "band": "Moderat til høj",
+   "spread": "Middel",
+   "question": "Jeg oplever, at bestyrelseslederens mødeledelse er effektiv og pragmatisk.",
+   "section": "general_work",
+   "subarea": "Bestyrelseslederens virke",
+   "col": 29
+  },
+  {
+   "n": 10,
+   "mean": 2.8,
+   "sd": 1.5491933384829668,
+   "band": "Moderat",
+   "spread": "Stor",
+   "question": "Jeg oplever, at bestyrelseslederen sikrer sig, at relevant dokumentation, data og analyser er tilgængelige, når der træffes beslutninger i bestyrelsen.",
+   "section": "general_work",
+   "subarea": "Bestyrelseslederens virke",
+   "col": 30
+  },
+  {
+   "n": 10,
+   "mean": 2.1,
+   "sd": 1.1972189997378648,
+   "band": "Lav til moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at vi får materialet forud for bestyrelsesmøderne i tilstrækkelig god tid til, at vi kan forberede os og sætte os ind i indholdet.",
+   "section": "general_work",
+   "subarea": "Bestyrelsesmateriale",
+   "col": 31
+  },
+  {
+   "n": 10,
+   "mean": 2.6,
+   "sd": 1.6465452046971292,
+   "band": "Moderat",
+   "spread": "Stor",
+   "question": "Jeg oplever, at bestyrelsesmaterialet er relevant.",
+   "section": "general_work",
+   "subarea": "Bestyrelsesmateriale",
+   "col": 32
+  },
+  {
+   "n": 10,
+   "mean": 3.0,
+   "sd": 1.4907119849998598,
+   "band": "Moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at bestyrelsesmaterialet er forståelig.",
+   "section": "general_work",
+   "subarea": "Bestyrelsesmateriale",
+   "col": 33
+  },
+  {
+   "n": 10,
+   "mean": 2.9,
+   "sd": 1.5951314818673865,
+   "band": "Moderat",
+   "spread": "Stor",
+   "question": "Jeg oplever, at kvaliteten og omfanget af bestyrelsesmaterialet er således, at jeg er velinformeret og kvalificeret til at træffe beslutninger på bestyrelsesmøderne.",
+   "section": "general_work",
+   "subarea": "Bestyrelsesmateriale",
+   "col": 34
+  },
+  {
+   "n": 10,
+   "mean": 2.6,
+   "sd": 1.4298407059684812,
+   "band": "Moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at bestyrelsen generelt læser og sætter sig grundigt ind i bestyrelsesmaterialet forud for bestyrelsesmøderne.",
+   "section": "general_work",
+   "subarea": "Bestyrelsesmateriale",
+   "col": 35
+  },
+  {
+   "n": 10,
+   "mean": 3.0,
+   "sd": 1.4142135623730951,
+   "band": "Moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at bestyrelsesmøderne har den rette længde.",
+   "section": "general_work",
+   "subarea": "Bestyrelsesmøderne",
+   "col": 36
+  },
+  {
+   "n": 10,
+   "mean": 2.8,
+   "sd": 1.2292725943057183,
+   "band": "Moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at bestyrelsesmøderne holdes med en passende frekvens.",
+   "section": "general_work",
+   "subarea": "Bestyrelsesmøderne",
+   "col": 37
+  },
+  {
+   "n": 10,
+   "mean": 2.8,
+   "sd": 1.5491933384829668,
+   "band": "Moderat",
+   "spread": "Stor",
+   "question": "Jeg oplever, at antallet af bestyrelsesmøder er passende.",
+   "section": "general_work",
+   "subarea": "Bestyrelsesmøderne",
+   "col": 38
+  },
+  {
+   "n": 10,
+   "mean": 3.1,
+   "sd": 1.5238839267549948,
+   "band": "Moderat til høj",
+   "spread": "Stor",
+   "question": "Jeg oplever, at bestyrelsen løbende opstiller mål og forventninger til virksomhedens finansielle situation.",
+   "section": "thematic_work",
+   "subarea": "Finansiel og økonomi",
+   "col": 39
+  },
+  {
+   "n": 10,
+   "mean": 2.4,
+   "sd": 1.3498971154211057,
+   "band": "Lav til moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at bestyrelsen løbende følger op på virksomhedens finansielle situation.",
+   "section": "thematic_work",
+   "subarea": "Finansiel og økonomi",
+   "col": 40
+  },
+  {
+   "n": 10,
+   "mean": 3.0,
+   "sd": 1.3333333333333333,
+   "band": "Moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at bestyrelsen løbende identificerer, evaluerer og diskuterer forskelige ricisi, som kan påvirke virksomheden.",
+   "section": "thematic_work",
+   "subarea": "Risikostyring",
+   "col": 41
+  },
+  {
+   "n": 10,
+   "mean": 3.5,
+   "sd": 1.509230856356236,
+   "band": "Moderat til høj",
+   "spread": "Stor",
+   "question": "Jeg oplever, at bestyrelsen sikre sig, at virksomheden har passende organisatoriske og tekniske foranstaltninger på plads i relation til IT- og cyberrisici.",
+   "section": "thematic_work",
+   "subarea": "Risikostyring",
+   "col": 42
+  },
+  {
+   "n": 10,
+   "mean": 2.5,
+   "sd": 1.4337208778404378,
+   "band": "Moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at bestyrelsen evner at sikre en strategi for virksomhedens lang- og kortsigtede udvikling",
+   "section": "thematic_work",
+   "subarea": "Forretningsudvikling",
+   "col": 43
+  },
+  {
+   "n": 10,
+   "mean": 2.2,
+   "sd": 1.7511900715418263,
+   "band": "Lav til moderat",
+   "spread": "Stor",
+   "question": "Jeg oplever, at bestyrelsen bidrager til virksomhedens værdiskabelse gennem f.eks. strategisk planlægning, beslutningstagning og implementering af initiativer, der fremmer virksomhedens mål og resultater.",
+   "section": "thematic_work",
+   "subarea": "Forretningsudvikling",
+   "col": 44
+  },
+  {
+   "n": 10,
+   "mean": 4.2,
+   "sd": 1.0327955589886444,
+   "band": "Høj",
+   "spread": "Middel",
+   "question": "Jeg oplever, at bestyrelsen har det bedst mulige samarbejde med direktionen, og at samarbejdet er værdiskabende for direktionens daglige arbejde i virksomheden.",
+   "section": "thematic_work",
+   "subarea": "Direktionen",
+   "col": 45
+  },
+  {
+   "n": 10,
+   "mean": 2.7,
+   "sd": 1.1595018087284057,
+   "band": "Moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at bestyrelsen løbende evaluerer direktionens arbejde, resulater og sammensætning",
+   "section": "thematic_work",
+   "subarea": "Direktionen",
+   "col": 46
+  },
+  {
+   "n": 10,
+   "mean": 3.9,
+   "sd": 1.286683937707919,
+   "band": "Moderat til høj",
+   "spread": "Middel",
+   "question": "Jeg oplever, at der er klarhed og enighed omkring ansvars- og opgavefordeling mellem bestyrelsen og direktionen.",
+   "section": "thematic_work",
+   "subarea": "Direktionen",
+   "col": 47
+  },
+  {
+   "n": 10,
+   "mean": 2.7,
+   "sd": 1.3374935098492586,
+   "band": "Moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at bestyrelsen løbende beskæftiger sig med virksomhedens organisatoriske forhold og medarbejdersammensætning (ledere, kritiske kompetencer, medarbejderstrategi mv.)",
+   "section": "thematic_work",
+   "subarea": "Organisatoriske forhold",
+   "col": 48
+  },
+  {
+   "n": 10,
+   "mean": 4.2,
+   "sd": 1.1352924243950933,
+   "band": "Høj",
+   "spread": "Middel",
+   "question": "Jeg oplever, at bestyrelsen løbende har øje for og beskæftiger sig med, at virksomheden lever op til gældende lovgivning.",
+   "section": "thematic_work",
+   "subarea": "Juridiske forhold",
+   "col": 49
+  },
+  {
+   "n": 10,
+   "mean": 2.9,
+   "sd": 1.286683937707919,
+   "band": "Moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at bestyrelsens løbende holdes opdateret på ændringer i markedet hvorpå virksomhed opererer - både nationalt og internationalt.",
+   "section": "thematic_work",
+   "subarea": "Markedet og internationalisering",
+   "col": 50
+  },
+  {
+   "n": 10,
+   "mean": 3.4,
+   "sd": 1.505545305418162,
+   "band": "Moderat til høj",
+   "spread": "Stor",
+   "question": "Jeg oplever, at bestyrelsen løbende beskæftiger sig med relevante nye potentielle markeder eller markedsandele - både nationalt og internationalt.",
+   "section": "thematic_work",
+   "subarea": "Markedet og internationalisering",
+   "col": 51
+  },
+  {
+   "n": 10,
+   "mean": 2.5,
+   "sd": 1.2692955176439846,
+   "band": "Moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at bestyrelsen løbende arbejder med en klar og veldefineret digital strategi, der er i tråd med virksomhedens overordnede mål og værdiskabelse.",
+   "section": "thematic_work",
+   "subarea": "Digitalisering og teknologi",
+   "col": 52
+  },
+  {
+   "n": 10,
+   "mean": 2.7,
+   "sd": 1.1595018087284057,
+   "band": "Moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at bestyrelsen integrerer bæredygtighed i virksomhedens overordnede strategi.",
+   "section": "thematic_work",
+   "subarea": "Bæredygtighed og ESG",
+   "col": 53
+  },
+  {
+   "n": 10,
+   "mean": 3.1,
+   "sd": 0.8755950357709131,
+   "band": "Moderat til høj",
+   "spread": "Lille",
+   "question": "Jeg oplever, at bestyrelsen løbende holdes opdateret på virksomhedens ESG-rapporteringsarbejde og måltal i relation hertil.",
+   "section": "thematic_work",
+   "subarea": "Bæredygtighed og ESG",
+   "col": 54
+  },
+  {
+   "n": 10,
+   "mean": 4.0,
+   "sd": 0.9428090415820634,
+   "band": "Høj",
+   "spread": "Lille",
+   "question": "Jeg oplever, at bestyrelsen aktivt beskæftiger sig med, hvordan virksomhedens miljøpåvirkning kan reduceres.",
+   "section": "thematic_work",
+   "subarea": "Bæredygtighed og ESG",
+   "col": 55
+  },
+  {
+   "n": 10,
+   "mean": 2.9,
+   "sd": 1.3703203194062976,
+   "band": "Moderat",
+   "spread": "Middel",
+   "question": "Jeg oplever, at bestyrelsen beskæftiger sig aktivt med social bæredygtighed, både internt i virksomheden og i værdikæden.",
+   "section": "thematic_work",
+   "subarea": "Bæredygtighed og ESG",
+   "col": 56
+  },
+  {
+   "n": 10,
+   "mean": 3.3,
+   "sd": 1.5670212364724212,
+   "band": "Moderat til høj",
+   "spread": "Stor",
+   "question": "Jeg oplever, at bestyrelsen aktivt beskæftiger sig med at sikre transparens og ansvarlighed i virksomhedens ledelse.",
+   "section": "thematic_work",
+   "subarea": "Bæredygtighed og ESG",
+   "col": 57
+  }
+ ],
+ "thematic_work": [
+  {
+   "label": "Finansiel og økonomi",
+   "n": 20,
+   "mean": 2.75,
+   "sd": 1.446411166701189
+  },
+  {
+   "label": "Risikostyring",
+   "n": 20,
+   "mean": 3.25,
+   "sd": 1.4095538674570611
+  },
+  {
+   "label": "Forretningsudvikling",
+   "n": 20,
+   "mean": 2.35,
+   "sd": 1.5652475842498528
+  },
+  {
+   "label": "Direktionen",
+   "n": 30,
+   "mean": 3.6,
+   "sd": 1.302517456365914
+  },
+  {
+   "label": "Organisatoriske forhold",
+   "n": 10,
+   "mean": 2.7,
+   "sd": 1.3374935098492586
+  },
+  {
+   "label": "Juridiske forhold",
+   "n": 10,
+   "mean": 4.2,
+   "sd": 1.1352924243950933
+  },
+  {
+   "label": "Markedet og internationalisering",
+   "n": 20,
+   "mean": 3.15,
+   "sd": 1.3869694338832115
+  },
+  {
+   "label": "Digitalisering og teknologi",
+   "n": 10,
+   "mean": 2.5,
+   "sd": 1.2692955176439846
+  },
+  {
+   "label": "Bæredygtighed og ESG",
+   "n": 50,
+   "mean": 3.2,
+   "sd": 1.2453996981544782
+  }
+ ],
+ "competency_areas": [
+  {
+   "area": "Bestyrelsesdiciplin",
+   "subareas": [
+    {
+     "label": "Uafhængighed og objektivitet",
+     "n": 20,
+     "mean": 3.65,
+     "sd": 1.460893742308382
+    },
+    {
+     "label": "Evaluering og udvikling",
+     "n": 20,
+     "mean": 3.1,
+     "sd": 1.5861240410775603
+    }
+   ],
+   "n": 40,
+   "mean": 3.375,
+   "sd": 1.5306693692462516,
+   "max": 4.25,
+   "min": 2.25,
+   "mean_sd": 1.523508891692971,
+   "band": "Moderat til høj",
+   "spread_band": "Stor"
+  },
+  {
+   "area": "Ledelse og ledelsesudvikling",
+   "subareas": [
+    {
+     "label": "Behovsidentifikation og udvikling",
+     "n": 20,
+     "mean": 2.9,
+     "sd": 1.4832396974191326
+    },
+    {
+     "label": "Tilsyn og rådgivning af direktion",
+     "n": 10,
+     "mean": 2.6,
+     "sd": 1.577621275493231
+    }
+   ],
+   "n": 30,
+   "mean": 2.8,
+   "sd": 1.4948186373673193,
+   "max": 4.333333333333333,
+   "min": 1.3333333333333333,
+   "mean_sd": 1.530430486456182,
+   "band": "Moderat",
+   "spread_band": "Stor"
+  },
+  {
+   "area": "Organisatoriske forhold",
+   "subareas": [
+    {
+     "label": "Organisationsudvikling",
+     "n": 20,
+     "mean": 2.9,
+     "sd": 1.1192102478745307
+    },
+    {
+     "label": "Talentudvikling og succession planning",
+     "n": 20,
+     "mean": 3.25,
+     "sd": 1.3717065820970682
+    },
+    {
+     "label": "Kulturel ledelse",
+     "n": 20,
+     "mean": 2.7,
+     "sd": 1.3416407864998738
+    }
+   ],
+   "n": 60,
+   "mean": 2.95,
+   "sd": 1.2812202869642728,
+   "max": 3.6666666666666665,
+   "min": 2.3333333333333335,
+   "mean_sd": 1.277519205490491,
+   "band": "Moderat",
+   "spread_band": "Middel"
+  },
+  {
+   "area": "Forretningsudvikling",
+   "subareas": [
+    {
+     "label": "Markedsanalyse og trendidentifikation",
+     "n": 30,
+     "mean": 3.2666666666666666,
+     "sd": 1.436790804568276
+    },
+    {
+     "label": "Strategiudvikling",
+     "n": 20,
+     "mean": 2.55,
+     "sd": 1.6693837501494848
+    },
+    {
+     "label": "Strategi-implementering",
+     "n": 20,
+     "mean": 2.75,
+     "sd": 1.4095538674570611
+    }
+   ],
+   "n": 70,
+   "mean": 2.914285714285714,
+   "sd": 1.5107619456137686,
+   "max": 4.0,
+   "min": 2.142857142857143,
+   "mean_sd": 1.5052428073916073,
+   "band": "Moderat",
+   "spread_band": "Stor"
+  },
+  {
+   "area": "Risikostyring",
+   "subareas": [
+    {
+     "label": "Risikoidentifikation",
+     "n": 10,
+     "mean": 2.6,
+     "sd": 1.6465452046971292
+    },
+    {
+     "label": "Risikovurdering",
+     "n": 10,
+     "mean": 2.9,
+     "sd": 0.9944289260117531
+    },
+    {
+     "label": "Risikostyring",
+     "n": 10,
+     "mean": 3.6,
+     "sd": 1.3498971154211057
+    }
+   ],
+   "n": 30,
+   "mean": 3.033333333333333,
+   "sd": 1.3767361035618173,
+   "max": 4.0,
+   "min": 1.6666666666666667,
+   "mean_sd": 1.3302904153766626,
+   "band": "Moderat",
+   "spread_band": "Middel"
+  },
+  {
+   "area": "Lovgivning og juridiske aspekter",
+   "subareas": [
+    {
+     "label": "Rådgivning",
+     "n": 10,
+     "mean": 2.0,
+     "sd": 0.816496580927726
+    },
+    {
+     "label": "Identifikation og evaluering af juridiske risici",
+     "n": 10,
+     "mean": 3.8,
+     "sd": 1.1352924243950935
+    }
+   ],
+   "n": 20,
+   "mean": 2.9,
+   "sd": 1.3337718577107003,
+   "max": 4.0,
+   "min": 2.0,
+   "mean_sd": 0.9758945026614098,
+   "band": "Moderat",
+   "spread_band": "Lille"
+  },
+  {
+   "area": "Finansiel og økonomi",
+   "subareas": [
+    {
+     "label": "Fusioner, opkøb og partnerskaber",
+     "n": 20,
+     "mean": 3.25,
+     "sd": 1.2085223687584246
+    },
+    {
+     "label": "Kapitalstyring og finansiering",
+     "n": 10,
+     "mean": 2.0,
+     "sd": 0.816496580927726
+    },
+    {
+     "label": "Økonomisk analyse og rapportering",
+     "n": 20,
+     "mean": 3.2,
+     "sd": 1.0563093645728086
+    },
+    {
+     "label": "Økonomisk planlægning og overvågning",
+     "n": 10,
+     "mean": 2.4,
+     "sd": 1.1737877907772674
+    }
+   ],
+   "n": 60,
+   "mean": 2.8833333333333333,
+   "sd": 1.1802278818547478,
+   "max": 3.5,
+   "min": 2.1666666666666665,
+   "mean_sd": 1.0637790262590565,
+   "band": "Moderat",
+   "spread_band": "Middel"
+  },
+  {
+   "area": "Interessenter og stakeholdermanagement",
+   "subareas": [
+    {
+     "label": "Interessentidentifikation og -kortlægning",
+     "n": 10,
+     "mean": 3.0,
+     "sd": 0.816496580927726
+    },
+    {
+     "label": "Kommunikation med interessenter",
+     "n": 10,
+     "mean": 3.1,
+     "sd": 1.449137674618944
+    },
+    {
+     "label": "Beslutningspåvirkning",
+     "n": 10,
+     "mean": 3.2,
+     "sd": 1.2292725943057183
+    }
+   ],
+   "n": 30,
+   "mean": 3.1,
+   "sd": 1.1551981469084383,
+   "max": 4.333333333333333,
+   "min": 2.0,
+   "mean_sd": 1.164968949950796,
+   "band": "Moderat til høj",
+   "spread_band": "Middel"
+  },
+  {
+   "area": "Digitalisering og teknologi",
+   "subareas": [
+    {
+     "label": "Digitale teknologier og deres anvendelsesområder",
+     "n": 20,
+     "mean": 3.15,
+     "sd": 1.3088765773505315
+    },
+    {
+     "label": "Digital strategi og transformation",
+     "n": 30,
+     "mean": 3.066666666666667,
+     "sd": 1.112106833535071
+    },
+    {
+     "label": "Datastrategier og datastyring",
+     "n": 20,
+     "mean": 2.55,
+     "sd": 1.4317821063276355
+    },
+    {
+     "label": "Cybersikkerhed og databeskyttelse",
+     "n": 20,
+     "mean": 3.5,
+     "sd": 1.3572417850765923
+    }
+   ],
+   "n": 90,
+   "mean": 3.066666666666667,
+   "sd": 1.3051324785311467,
+   "max": 3.7777777777777777,
+   "min": 2.5555555555555554,
+   "mean_sd": 1.3025018255724576,
+   "band": "Moderat",
+   "spread_band": "Middel"
+  },
+  {
+   "area": "Bæredygtighed og ESG",
+   "subareas": [
+    {
+     "label": "E",
+     "n": 20,
+     "mean": 3.3,
+     "sd": 1.4903196407411892
+    },
+    {
+     "label": "S",
+     "n": 20,
+     "mean": 3.25,
+     "sd": 1.4823523268955432
+    },
+    {
+     "label": "G",
+     "n": 10,
+     "mean": 2.4,
+     "sd": 1.505545305418162
+    },
+    {
+     "label": "ESG-samlet",
+     "n": 20,
+     "mean": 3.0,
+     "sd": 1.6543403837370223
+    }
+   ],
+   "n": 70,
+   "mean": 3.0714285714285716,
+   "sd": 1.535298947157477,
+   "max": 4.142857142857143,
+   "min": 2.142857142857143,
+   "mean_sd": 1.5331394141979793,
+   "band": "Moderat",
+   "spread_band": "Stor"
+  },
+  {
+   "area": "Internationalisering",
+   "subareas": [
+    {
+     "label": "Distributionskanaler og partnerskaber",
+     "n": 10,
+     "mean": 3.1,
+     "sd": 1.3703203194062976
+    },
+    {
+     "label": "Eksport- og importstrategier",
+     "n": 10,
+     "mean": 3.0,
+     "sd": 1.1547005383792515
+    },
+    {
+     "label": "Kulturel forståelse og tilpasning",
+     "n": 20,
+     "mean": 3.1,
+     "sd": 1.4473205733717955
+    },
+    {
+     "label": "Juridiske tilpasninger og overholdelse",
+     "n": 20,
+     "mean": 2.85,
+     "sd": 1.1367080817685316
+    }
+   ],
+   "n": 60,
+   "mean": 3.0,
+   "sd": 1.2622283228414148,
+   "max": 4.166666666666667,
+   "min": 2.0,
+   "mean_sd": 1.2772623782314692,
+   "band": "Moderat",
+   "spread_band": "Middel"
+  }
+ ],
+ "area_ratings": [
+  {
+   "area": "Organisatoriske forhold",
+   "n": 10,
+   "mean": 3.6,
+   "sd": 1.577621275493231
+  },
+  {
+   "area": "Interessenter og stakeholdermanagement",
+   "n": 10,
+   "mean": 3.4,
+   "sd": 1.6465452046971292
+  },
+  {
+   "area": "Digitalisering og teknologi",
+   "n": 10,
+   "mean": 3.3,
+   "sd": 1.8287822299126937
+  },
+  {
+   "area": "Risikostyring",
+   "n": 10,
+   "mean": 3.2,
+   "sd": 1.5491933384829668
+  },
+  {
+   "area": "Økonomistyring",
+   "n": 10,
+   "mean": 3.2,
+   "sd": 1.6865480854231356
+  },
+  {
+   "area": "Bestyrelsesdiciplin",
+   "n": 10,
+   "mean": 2.9,
+   "sd": 1.449137674618944
+  },
+  {
+   "area": "Juridiske forhold",
+   "n": 10,
+   "mean": 2.9,
+   "sd": 1.449137674618944
+  },
+  {
+   "area": "Internationalisering",
+   "n": 10,
+   "mean": 2.9,
+   "sd": 1.3703203194062976
+  },
+  {
+   "area": "Ledelse og ledelsesudvikling",
+   "n": 10,
+   "mean": 2.6,
+   "sd": 1.1737877907772674
+  },
+  {
+   "area": "Forretningsudvikling",
+   "n": 10,
+   "mean": 2.5,
+   "sd": 1.509230856356236
+  },
+  {
+   "area": "Bæredygtighed og ESG",
+   "n": 10,
+   "mean": 2.2,
+   "sd": 1.2292725943057183
+  }
+ ],
+ "team_competence": {
+  "n": 10,
+  "mean": 2.5,
+  "sd": 0.8498365855987975,
+  "band": "Moderat",
+  "spread": "Lille",
+  "question": "Kolonne 127"
+ },
+ "priority_alignment": {
+  "n": 10,
+  "mean": 2.6,
+  "sd": 1.6465452046971292,
+  "band": "Moderat",
+  "spread": "Stor",
+  "question": "I hvilken grad oplever du, at bestyrelsens nuværende prioritering og fokus følger den prioriterede rækkefølge, som du netop har angivet?"
+ },
+ "ranking": [
+  {
+   "topic": "Organisatoriske forhold",
+   "avg_rank": 3.7,
+   "n": 10
+  },
+  {
+   "topic": "Økonomistyring",
+   "avg_rank": 4.9,
+   "n": 10
+  },
+  {
+   "topic": "Ledelsesudvikling",
+   "avg_rank": 5.1,
+   "n": 10
+  },
+  {
+   "topic": "Risikostyring",
+   "avg_rank": 5.1,
+   "n": 10
+  },
+  {
+   "topic": "Internationalisering",
+   "avg_rank": 5.5,
+   "n": 10
+  },
+  {
+   "topic": "Interessenter og stakeholder",
+   "avg_rank": 5.6,
+   "n": 10
+  },
+  {
+   "topic": "Juridiske forhold",
+   "avg_rank": 5.9,
+   "n": 10
+  },
+  {
+   "topic": "Bæredygtighed og ESG",
+   "avg_rank": 6,
+   "n": 10
+  },
+  {
+   "topic": "Digitalisering og teknologi",
+   "avg_rank": 6.4,
+   "n": 10
+  },
+  {
+   "topic": "Forretningsudvikling",
+   "avg_rank": 6.8,
+   "n": 10
+  }
+ ],
+ "independent_members": 1,
+ "independence": [
+  {
+   "question": "Uafhængighed kriterium 128",
+   "yes": 5
+  },
+  {
+   "question": "Uafhængighed kriterium 129",
+   "yes": 3
+  },
+  {
+   "question": "Uafhængighed kriterium 130",
+   "yes": 3
+  },
+  {
+   "question": "Uafhængighed kriterium 131",
+   "yes": 1
+  },
+  {
+   "question": "Uafhængighed kriterium 132",
+   "yes": 2
+  },
+  {
+   "question": "Uafhængighed kriterium 133",
+   "yes": 4
+  },
+  {
+   "question": "Uafhængighed kriterium 134",
+   "yes": 2
+  }
+ ],
+ "peer": [
+  {
+   "name": "Kim Eksempel",
+   "Aktivt bidrag": {
+    "peer_mean": 3.2222222222222223,
+    "n": 9,
+    "own": 3.0
+   },
+   "Viden og kompetencer": {
+    "peer_mean": 3.2222222222222223,
+    "n": 9,
+    "own": 1.0
+   },
+   "Deler tanker, indsigter og perspektiver": {
+    "peer_mean": 3.2222222222222223,
+    "n": 9,
+    "own": 2.0
+   },
+   "Samarbejdsvillig, konstruktiv og reflekteret": {
+    "peer_mean": 2.5555555555555554,
+    "n": 9,
+    "own": 2.0
+   }
+  },
+  {
+   "name": "Sam Fiktiv",
+   "Aktivt bidrag": {
+    "peer_mean": 3.111111111111111,
+    "n": 9,
+    "own": 4.0
+   },
+   "Viden og kompetencer": {
+    "peer_mean": 3.111111111111111,
+    "n": 9,
+    "own": 4.0
+   },
+   "Deler tanker, indsigter og perspektiver": {
+    "peer_mean": 2.4444444444444446,
+    "n": 9,
+    "own": 3.0
+   },
+   "Samarbejdsvillig, konstruktiv og reflekteret": {
+    "peer_mean": 2.888888888888889,
+    "n": 9,
+    "own": 1.0
+   }
+  },
+  {
+   "name": "Lee Testsen",
+   "Aktivt bidrag": {
+    "peer_mean": 2.2222222222222223,
+    "n": 9,
+    "own": 5.0
+   },
+   "Viden og kompetencer": {
+    "peer_mean": 2.6666666666666665,
+    "n": 9,
+    "own": 5.0
+   },
+   "Deler tanker, indsigter og perspektiver": {
+    "peer_mean": 3.2222222222222223,
+    "n": 9,
+    "own": 4.0
+   },
+   "Samarbejdsvillig, konstruktiv og reflekteret": {
+    "peer_mean": 2.888888888888889,
+    "n": 9,
+    "own": 2.0
+   }
+  },
+  {
+   "name": "Jo Demo",
+   "Aktivt bidrag": {
+    "peer_mean": 3.6666666666666665,
+    "n": 9,
+    "own": 1.0
+   },
+   "Viden og kompetencer": {
+    "peer_mean": 3.0,
+    "n": 9,
+    "own": 4.0
+   },
+   "Deler tanker, indsigter og perspektiver": {
+    "peer_mean": 3.7777777777777777,
+    "n": 9,
+    "own": 3.0
+   },
+   "Samarbejdsvillig, konstruktiv og reflekteret": {
+    "peer_mean": 3.0,
+    "n": 9,
+    "own": 2.0
+   }
+  },
+  {
+   "name": "Max Prøvemann",
+   "Aktivt bidrag": {
+    "peer_mean": 2.888888888888889,
+    "n": 9,
+    "own": 3.0
+   },
+   "Viden og kompetencer": {
+    "peer_mean": 2.3333333333333335,
+    "n": 9,
+    "own": 3.0
+   },
+   "Deler tanker, indsigter og perspektiver": {
+    "peer_mean": 2.5555555555555554,
+    "n": 9,
+    "own": 1.0
+   },
+   "Samarbejdsvillig, konstruktiv og reflekteret": {
+    "peer_mean": 3.4444444444444446,
+    "n": 9,
+    "own": 4.0
+   }
+  },
+  {
+   "name": "Eva Syntetisk",
+   "Aktivt bidrag": {
+    "peer_mean": 2.6666666666666665,
+    "n": 9,
+    "own": 4.0
+   },
+   "Viden og kompetencer": {
+    "peer_mean": 2.5555555555555554,
+    "n": 9,
+    "own": 2.0
+   },
+   "Deler tanker, indsigter og perspektiver": {
+    "peer_mean": 3.2222222222222223,
+    "n": 9,
+    "own": 3.0
+   },
+   "Samarbejdsvillig, konstruktiv og reflekteret": {
+    "peer_mean": 2.7777777777777777,
+    "n": 9,
+    "own": 3.0
+   }
+  },
+  {
+   "name": "Ole Dummy",
+   "Aktivt bidrag": {
+    "peer_mean": 2.2222222222222223,
+    "n": 9,
+    "own": 5.0
+   },
+   "Viden og kompetencer": {
+    "peer_mean": 2.5555555555555554,
+    "n": 9,
+    "own": 5.0
+   },
+   "Deler tanker, indsigter og perspektiver": {
+    "peer_mean": 2.888888888888889,
+    "n": 9,
+    "own": 5.0
+   },
+   "Samarbejdsvillig, konstruktiv og reflekteret": {
+    "peer_mean": 1.5555555555555556,
+    "n": 9,
+    "own": 1.0
+   }
+  },
+  {
+   "name": "Ida Mock",
+   "Aktivt bidrag": {
+    "peer_mean": 3.6666666666666665,
+    "n": 9,
+    "own": 5.0
+   },
+   "Viden og kompetencer": {
+    "peer_mean": 3.2222222222222223,
+    "n": 9,
+    "own": 3.0
+   },
+   "Deler tanker, indsigter og perspektiver": {
+    "peer_mean": 3.0,
+    "n": 9,
+    "own": 1.0
+   },
+   "Samarbejdsvillig, konstruktiv og reflekteret": {
+    "peer_mean": 3.0,
+    "n": 9,
+    "own": 2.0
+   }
+  },
+  {
+   "name": "Rune Kunstig",
+   "Aktivt bidrag": {
+    "peer_mean": 3.0,
+    "n": 9,
+    "own": 1.0
+   },
+   "Viden og kompetencer": {
+    "peer_mean": 3.0,
+    "n": 9,
+    "own": 1.0
+   },
+   "Deler tanker, indsigter og perspektiver": {
+    "peer_mean": 3.4444444444444446,
+    "n": 9,
+    "own": 3.0
+   },
+   "Samarbejdsvillig, konstruktiv og reflekteret": {
+    "peer_mean": 2.888888888888889,
+    "n": 9,
+    "own": 1.0
+   }
+  },
+  {
+   "name": "Mia Modelsen",
+   "Aktivt bidrag": {
+    "peer_mean": 2.888888888888889,
+    "n": 9,
+    "own": 4.0
+   },
+   "Viden og kompetencer": {
+    "peer_mean": 2.3333333333333335,
+    "n": 9,
+    "own": 4.0
+   },
+   "Deler tanker, indsigter og perspektiver": {
+    "peer_mean": 3.111111111111111,
+    "n": 9,
+    "own": 2.0
+   },
+   "Samarbejdsvillig, konstruktiv og reflekteret": {
+    "peer_mean": 2.3333333333333335,
+    "n": 9,
+    "own": 5.0
+   }
+  }
+ ],
+ "profiles": [
+  {
+   "name": "Kim Eksempel",
+   "categories": [
+    "Samlet",
+    "Uafhængighed og objektivitet",
+    "Evaluering og udvikling",
+    "Samlet",
+    "Behovsidentifikation og udvikling",
+    "Tilsyn og rådgivning af direktion",
+    "Samlet",
+    "Organisationsudvikling",
+    "Talentudvikling og succession planning",
+    "Kulturel ledelse",
+    "Samlet",
+    "Markedsanalyse og trendidentifikation",
+    "Strategiudvikling",
+    "Strategi-implementering",
+    "Samlet",
+    "Risikoidentifikation",
+    "Risikovurdering",
+    "Risikostyring",
+    "Samlet",
+    "Rådgivning",
+    "Identifikation og evaluering af juridiske risici",
+    "Samlet",
+    "Fusioner, opkøb og partnerskaber",
+    "Kapitalstyring og finansiering",
+    "Økonomisk analyse og rapportering",
+    "Økonomisk planlægning og overvågning",
+    "Samlet",
+    "Interessentidentifikation og -kortlægning",
+    "Kommunikation med interessenter",
+    "Beslutningspåvirkning",
+    "Samlet",
+    "Digitale teknologier og deres anvendelsesområder",
+    "Digital strategi og transformation",
+    "Datastrategier og datastyring",
+    "Cybersikkerhed og databeskyttelse",
+    "Samlet",
+    "E",
+    "S",
+    "G",
+    "ESG-samlet",
+    "Samlet",
+    "Distributionskanaler og partnerskaber",
+    "Eksport- og importstrategier",
+    "Kulturel forståelse og tilpasning",
+    "Juridiske tilpasninger og overholdelse"
+   ],
+   "values": [
+    4.0,
+    3.5,
+    4.5,
+    3.3333333333333335,
+    3.0,
+    4.0,
+    2.5,
+    2.0,
+    3.0,
+    2.5,
+    2.857142857142857,
+    4.333333333333333,
+    2.0,
+    1.5,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    1.0,
+    5.0,
+    3.1666666666666665,
+    3.0,
+    3.0,
+    4.0,
+    2.0,
+    2.6666666666666665,
+    1.0,
+    4.0,
+    3.0,
+    3.6666666666666665,
+    3.5,
+    3.6666666666666665,
+    2.5,
+    5.0,
+    3.2857142857142856,
+    3.0,
+    3.5,
+    1.0,
+    4.5,
+    3.1666666666666665,
+    5.0,
+    2.0,
+    3.0,
+    3.0
+   ]
+  },
+  {
+   "name": "Sam Fiktiv",
+   "categories": [
+    "Samlet",
+    "Uafhængighed og objektivitet",
+    "Evaluering og udvikling",
+    "Samlet",
+    "Behovsidentifikation og udvikling",
+    "Tilsyn og rådgivning af direktion",
+    "Samlet",
+    "Organisationsudvikling",
+    "Talentudvikling og succession planning",
+    "Kulturel ledelse",
+    "Samlet",
+    "Markedsanalyse og trendidentifikation",
+    "Strategiudvikling",
+    "Strategi-implementering",
+    "Samlet",
+    "Risikoidentifikation",
+    "Risikovurdering",
+    "Risikostyring",
+    "Samlet",
+    "Rådgivning",
+    "Identifikation og evaluering af juridiske risici",
+    "Samlet",
+    "Fusioner, opkøb og partnerskaber",
+    "Kapitalstyring og finansiering",
+    "Økonomisk analyse og rapportering",
+    "Økonomisk planlægning og overvågning",
+    "Samlet",
+    "Interessentidentifikation og -kortlægning",
+    "Kommunikation med interessenter",
+    "Beslutningspåvirkning",
+    "Samlet",
+    "Digitale teknologier og deres anvendelsesområder",
+    "Digital strategi og transformation",
+    "Datastrategier og datastyring",
+    "Cybersikkerhed og databeskyttelse",
+    "Samlet",
+    "E",
+    "S",
+    "G",
+    "ESG-samlet",
+    "Samlet",
+    "Distributionskanaler og partnerskaber",
+    "Eksport- og importstrategier",
+    "Kulturel forståelse og tilpasning",
+    "Juridiske tilpasninger og overholdelse"
+   ],
+   "values": [
+    3.25,
+    5.0,
+    1.5,
+    2.0,
+    2.5,
+    1.0,
+    3.5,
+    3.5,
+    4.0,
+    3.0,
+    2.7142857142857144,
+    3.0,
+    1.5,
+    3.5,
+    3.3333333333333335,
+    5.0,
+    3.0,
+    2.0,
+    3.0,
+    1.0,
+    5.0,
+    3.3333333333333335,
+    4.0,
+    2.0,
+    3.5,
+    3.0,
+    4.333333333333333,
+    4.0,
+    4.0,
+    5.0,
+    2.5555555555555554,
+    2.0,
+    2.3333333333333335,
+    3.0,
+    3.0,
+    3.2857142857142856,
+    3.5,
+    3.0,
+    5.0,
+    2.5,
+    2.5,
+    4.0,
+    3.0,
+    2.5,
+    1.5
+   ]
+  },
+  {
+   "name": "Lee Testsen",
+   "categories": [
+    "Samlet",
+    "Uafhængighed og objektivitet",
+    "Evaluering og udvikling",
+    "Samlet",
+    "Behovsidentifikation og udvikling",
+    "Tilsyn og rådgivning af direktion",
+    "Samlet",
+    "Organisationsudvikling",
+    "Talentudvikling og succession planning",
+    "Kulturel ledelse",
+    "Samlet",
+    "Markedsanalyse og trendidentifikation",
+    "Strategiudvikling",
+    "Strategi-implementering",
+    "Samlet",
+    "Risikoidentifikation",
+    "Risikovurdering",
+    "Risikostyring",
+    "Samlet",
+    "Rådgivning",
+    "Identifikation og evaluering af juridiske risici",
+    "Samlet",
+    "Fusioner, opkøb og partnerskaber",
+    "Kapitalstyring og finansiering",
+    "Økonomisk analyse og rapportering",
+    "Økonomisk planlægning og overvågning",
+    "Samlet",
+    "Interessentidentifikation og -kortlægning",
+    "Kommunikation med interessenter",
+    "Beslutningspåvirkning",
+    "Samlet",
+    "Digitale teknologier og deres anvendelsesområder",
+    "Digital strategi og transformation",
+    "Datastrategier og datastyring",
+    "Cybersikkerhed og databeskyttelse",
+    "Samlet",
+    "E",
+    "S",
+    "G",
+    "ESG-samlet",
+    "Samlet",
+    "Distributionskanaler og partnerskaber",
+    "Eksport- og importstrategier",
+    "Kulturel forståelse og tilpasning",
+    "Juridiske tilpasninger og overholdelse"
+   ],
+   "values": [
+    4.25,
+    3.5,
+    5.0,
+    2.6666666666666665,
+    3.5,
+    1.0,
+    2.6666666666666665,
+    4.0,
+    2.5,
+    1.5,
+    3.142857142857143,
+    2.3333333333333335,
+    4.5,
+    3.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    4.0,
+    3.0,
+    5.0,
+    3.5,
+    4.5,
+    3.0,
+    4.0,
+    1.0,
+    2.3333333333333335,
+    3.0,
+    1.0,
+    3.0,
+    3.111111111111111,
+    3.5,
+    3.0,
+    2.5,
+    3.5,
+    3.0,
+    4.0,
+    3.0,
+    2.0,
+    2.5,
+    2.6666666666666665,
+    3.0,
+    2.0,
+    2.5,
+    3.0
+   ]
+  },
+  {
+   "name": "Jo Demo",
+   "categories": [
+    "Samlet",
+    "Uafhængighed og objektivitet",
+    "Evaluering og udvikling",
+    "Samlet",
+    "Behovsidentifikation og udvikling",
+    "Tilsyn og rådgivning af direktion",
+    "Samlet",
+    "Organisationsudvikling",
+    "Talentudvikling og succession planning",
+    "Kulturel ledelse",
+    "Samlet",
+    "Markedsanalyse og trendidentifikation",
+    "Strategiudvikling",
+    "Strategi-implementering",
+    "Samlet",
+    "Risikoidentifikation",
+    "Risikovurdering",
+    "Risikostyring",
+    "Samlet",
+    "Rådgivning",
+    "Identifikation og evaluering af juridiske risici",
+    "Samlet",
+    "Fusioner, opkøb og partnerskaber",
+    "Kapitalstyring og finansiering",
+    "Økonomisk analyse og rapportering",
+    "Økonomisk planlægning og overvågning",
+    "Samlet",
+    "Interessentidentifikation og -kortlægning",
+    "Kommunikation med interessenter",
+    "Beslutningspåvirkning",
+    "Samlet",
+    "Digitale teknologier og deres anvendelsesområder",
+    "Digital strategi og transformation",
+    "Datastrategier og datastyring",
+    "Cybersikkerhed og databeskyttelse",
+    "Samlet",
+    "E",
+    "S",
+    "G",
+    "ESG-samlet",
+    "Samlet",
+    "Distributionskanaler og partnerskaber",
+    "Eksport- og importstrategier",
+    "Kulturel forståelse og tilpasning",
+    "Juridiske tilpasninger og overholdelse"
+   ],
+   "values": [
+    3.25,
+    2.0,
+    4.5,
+    3.3333333333333335,
+    3.0,
+    4.0,
+    3.3333333333333335,
+    4.0,
+    3.5,
+    2.5,
+    3.142857142857143,
+    3.3333333333333335,
+    2.5,
+    3.5,
+    4.0,
+    5.0,
+    2.0,
+    5.0,
+    3.0,
+    2.0,
+    4.0,
+    3.0,
+    2.5,
+    1.0,
+    4.5,
+    3.0,
+    2.0,
+    3.0,
+    1.0,
+    2.0,
+    3.0,
+    3.0,
+    2.6666666666666665,
+    3.0,
+    3.5,
+    2.4285714285714284,
+    2.0,
+    3.5,
+    1.0,
+    2.5,
+    2.6666666666666665,
+    2.0,
+    4.0,
+    2.0,
+    3.0
+   ]
+  },
+  {
+   "name": "Max Prøvemann",
+   "categories": [
+    "Samlet",
+    "Uafhængighed og objektivitet",
+    "Evaluering og udvikling",
+    "Samlet",
+    "Behovsidentifikation og udvikling",
+    "Tilsyn og rådgivning af direktion",
+    "Samlet",
+    "Organisationsudvikling",
+    "Talentudvikling og succession planning",
+    "Kulturel ledelse",
+    "Samlet",
+    "Markedsanalyse og trendidentifikation",
+    "Strategiudvikling",
+    "Strategi-implementering",
+    "Samlet",
+    "Risikoidentifikation",
+    "Risikovurdering",
+    "Risikostyring",
+    "Samlet",
+    "Rådgivning",
+    "Identifikation og evaluering af juridiske risici",
+    "Samlet",
+    "Fusioner, opkøb og partnerskaber",
+    "Kapitalstyring og finansiering",
+    "Økonomisk analyse og rapportering",
+    "Økonomisk planlægning og overvågning",
+    "Samlet",
+    "Interessentidentifikation og -kortlægning",
+    "Kommunikation med interessenter",
+    "Beslutningspåvirkning",
+    "Samlet",
+    "Digitale teknologier og deres anvendelsesområder",
+    "Digital strategi og transformation",
+    "Datastrategier og datastyring",
+    "Cybersikkerhed og databeskyttelse",
+    "Samlet",
+    "E",
+    "S",
+    "G",
+    "ESG-samlet",
+    "Samlet",
+    "Distributionskanaler og partnerskaber",
+    "Eksport- og importstrategier",
+    "Kulturel forståelse og tilpasning",
+    "Juridiske tilpasninger og overholdelse"
+   ],
+   "values": [
+    3.5,
+    3.5,
+    3.5,
+    1.3333333333333333,
+    1.5,
+    1.0,
+    3.1666666666666665,
+    2.5,
+    3.5,
+    3.5,
+    2.4285714285714284,
+    2.6666666666666665,
+    2.0,
+    2.5,
+    2.3333333333333335,
+    1.0,
+    2.0,
+    4.0,
+    2.0,
+    2.0,
+    2.0,
+    2.1666666666666665,
+    3.0,
+    1.0,
+    2.5,
+    1.0,
+    3.6666666666666665,
+    3.0,
+    4.0,
+    4.0,
+    3.3333333333333335,
+    3.5,
+    3.3333333333333335,
+    3.0,
+    3.5,
+    2.142857142857143,
+    2.5,
+    2.5,
+    1.0,
+    2.0,
+    4.166666666666667,
+    4.0,
+    5.0,
+    4.0,
+    4.0
+   ]
+  },
+  {
+   "name": "Eva Syntetisk",
+   "categories": [
+    "Samlet",
+    "Uafhængighed og objektivitet",
+    "Evaluering og udvikling",
+    "Samlet",
+    "Behovsidentifikation og udvikling",
+    "Tilsyn og rådgivning af direktion",
+    "Samlet",
+    "Organisationsudvikling",
+    "Talentudvikling og succession planning",
+    "Kulturel ledelse",
+    "Samlet",
+    "Markedsanalyse og trendidentifikation",
+    "Strategiudvikling",
+    "Strategi-implementering",
+    "Samlet",
+    "Risikoidentifikation",
+    "Risikovurdering",
+    "Risikostyring",
+    "Samlet",
+    "Rådgivning",
+    "Identifikation og evaluering af juridiske risici",
+    "Samlet",
+    "Fusioner, opkøb og partnerskaber",
+    "Kapitalstyring og finansiering",
+    "Økonomisk analyse og rapportering",
+    "Økonomisk planlægning og overvågning",
+    "Samlet",
+    "Interessentidentifikation og -kortlægning",
+    "Kommunikation med interessenter",
+    "Beslutningspåvirkning",
+    "Samlet",
+    "Digitale teknologier og deres anvendelsesområder",
+    "Digital strategi og transformation",
+    "Datastrategier og datastyring",
+    "Cybersikkerhed og databeskyttelse",
+    "Samlet",
+    "E",
+    "S",
+    "G",
+    "ESG-samlet",
+    "Samlet",
+    "Distributionskanaler og partnerskaber",
+    "Eksport- og importstrategier",
+    "Kulturel forståelse og tilpasning",
+    "Juridiske tilpasninger og overholdelse"
+   ],
+   "values": [
+    3.75,
+    4.5,
+    3.0,
+    2.6666666666666665,
+    3.5,
+    1.0,
+    3.6666666666666665,
+    3.5,
+    3.0,
+    4.5,
+    4.0,
+    4.666666666666667,
+    5.0,
+    2.0,
+    2.6666666666666665,
+    1.0,
+    2.0,
+    5.0,
+    3.0,
+    2.0,
+    4.0,
+    2.6666666666666665,
+    3.5,
+    1.0,
+    2.0,
+    4.0,
+    2.3333333333333335,
+    3.0,
+    2.0,
+    2.0,
+    3.7777777777777777,
+    4.0,
+    3.6666666666666665,
+    4.0,
+    3.5,
+    3.142857142857143,
+    3.5,
+    3.0,
+    3.0,
+    3.0,
+    3.3333333333333335,
+    3.0,
+    3.0,
+    4.0,
+    3.0
+   ]
+  },
+  {
+   "name": "Ole Dummy",
+   "categories": [
+    "Samlet",
+    "Uafhængighed og objektivitet",
+    "Evaluering og udvikling",
+    "Samlet",
+    "Behovsidentifikation og udvikling",
+    "Tilsyn og rådgivning af direktion",
+    "Samlet",
+    "Organisationsudvikling",
+    "Talentudvikling og succession planning",
+    "Kulturel ledelse",
+    "Samlet",
+    "Markedsanalyse og trendidentifikation",
+    "Strategiudvikling",
+    "Strategi-implementering",
+    "Samlet",
+    "Risikoidentifikation",
+    "Risikovurdering",
+    "Risikostyring",
+    "Samlet",
+    "Rådgivning",
+    "Identifikation og evaluering af juridiske risici",
+    "Samlet",
+    "Fusioner, opkøb og partnerskaber",
+    "Kapitalstyring og finansiering",
+    "Økonomisk analyse og rapportering",
+    "Økonomisk planlægning og overvågning",
+    "Samlet",
+    "Interessentidentifikation og -kortlægning",
+    "Kommunikation med interessenter",
+    "Beslutningspåvirkning",
+    "Samlet",
+    "Digitale teknologier og deres anvendelsesområder",
+    "Digital strategi og transformation",
+    "Datastrategier og datastyring",
+    "Cybersikkerhed og databeskyttelse",
+    "Samlet",
+    "E",
+    "S",
+    "G",
+    "ESG-samlet",
+    "Samlet",
+    "Distributionskanaler og partnerskaber",
+    "Eksport- og importstrategier",
+    "Kulturel forståelse og tilpasning",
+    "Juridiske tilpasninger og overholdelse"
+   ],
+   "values": [
+    3.75,
+    3.5,
+    4.0,
+    4.333333333333333,
+    4.0,
+    5.0,
+    2.5,
+    2.0,
+    4.0,
+    1.5,
+    2.4285714285714284,
+    3.3333333333333335,
+    1.5,
+    2.0,
+    1.6666666666666667,
+    2.0,
+    2.0,
+    1.0,
+    3.0,
+    2.0,
+    4.0,
+    2.8333333333333335,
+    3.0,
+    2.0,
+    3.5,
+    2.0,
+    3.0,
+    3.0,
+    4.0,
+    2.0,
+    2.6666666666666665,
+    2.5,
+    2.6666666666666665,
+    1.5,
+    4.0,
+    2.857142857142857,
+    4.0,
+    3.5,
+    1.0,
+    2.0,
+    3.6666666666666665,
+    2.0,
+    3.0,
+    5.0,
+    3.5
+   ]
+  },
+  {
+   "name": "Ida Mock",
+   "categories": [
+    "Samlet",
+    "Uafhængighed og objektivitet",
+    "Evaluering og udvikling",
+    "Samlet",
+    "Behovsidentifikation og udvikling",
+    "Tilsyn og rådgivning af direktion",
+    "Samlet",
+    "Organisationsudvikling",
+    "Talentudvikling og succession planning",
+    "Kulturel ledelse",
+    "Samlet",
+    "Markedsanalyse og trendidentifikation",
+    "Strategiudvikling",
+    "Strategi-implementering",
+    "Samlet",
+    "Risikoidentifikation",
+    "Risikovurdering",
+    "Risikostyring",
+    "Samlet",
+    "Rådgivning",
+    "Identifikation og evaluering af juridiske risici",
+    "Samlet",
+    "Fusioner, opkøb og partnerskaber",
+    "Kapitalstyring og finansiering",
+    "Økonomisk analyse og rapportering",
+    "Økonomisk planlægning og overvågning",
+    "Samlet",
+    "Interessentidentifikation og -kortlægning",
+    "Kommunikation med interessenter",
+    "Beslutningspåvirkning",
+    "Samlet",
+    "Digitale teknologier og deres anvendelsesområder",
+    "Digital strategi og transformation",
+    "Datastrategier og datastyring",
+    "Cybersikkerhed og databeskyttelse",
+    "Samlet",
+    "E",
+    "S",
+    "G",
+    "ESG-samlet",
+    "Samlet",
+    "Distributionskanaler og partnerskaber",
+    "Eksport- og importstrategier",
+    "Kulturel forståelse og tilpasning",
+    "Juridiske tilpasninger og overholdelse"
+   ],
+   "values": [
+    2.25,
+    3.0,
+    1.5,
+    2.3333333333333335,
+    2.0,
+    3.0,
+    3.0,
+    4.0,
+    1.0,
+    4.0,
+    3.0,
+    2.6666666666666665,
+    3.0,
+    3.5,
+    3.0,
+    3.0,
+    3.0,
+    3.0,
+    2.5,
+    1.0,
+    4.0,
+    3.0,
+    3.0,
+    2.0,
+    3.0,
+    4.0,
+    4.333333333333333,
+    3.0,
+    5.0,
+    5.0,
+    2.6666666666666665,
+    2.0,
+    4.0,
+    1.5,
+    2.5,
+    4.142857142857143,
+    4.5,
+    4.0,
+    4.0,
+    4.0,
+    2.0,
+    2.0,
+    1.0,
+    2.0,
+    2.5
+   ]
+  },
+  {
+   "name": "Rune Kunstig",
+   "categories": [
+    "Samlet",
+    "Uafhængighed og objektivitet",
+    "Evaluering og udvikling",
+    "Samlet",
+    "Behovsidentifikation og udvikling",
+    "Tilsyn og rådgivning af direktion",
+    "Samlet",
+    "Organisationsudvikling",
+    "Talentudvikling og succession planning",
+    "Kulturel ledelse",
+    "Samlet",
+    "Markedsanalyse og trendidentifikation",
+    "Strategiudvikling",
+    "Strategi-implementering",
+    "Samlet",
+    "Risikoidentifikation",
+    "Risikovurdering",
+    "Risikostyring",
+    "Samlet",
+    "Rådgivning",
+    "Identifikation og evaluering af juridiske risici",
+    "Samlet",
+    "Fusioner, opkøb og partnerskaber",
+    "Kapitalstyring og finansiering",
+    "Økonomisk analyse og rapportering",
+    "Økonomisk planlægning og overvågning",
+    "Samlet",
+    "Interessentidentifikation og -kortlægning",
+    "Kommunikation med interessenter",
+    "Beslutningspåvirkning",
+    "Samlet",
+    "Digitale teknologier og deres anvendelsesområder",
+    "Digital strategi og transformation",
+    "Datastrategier og datastyring",
+    "Cybersikkerhed og databeskyttelse",
+    "Samlet",
+    "E",
+    "S",
+    "G",
+    "ESG-samlet",
+    "Samlet",
+    "Distributionskanaler og partnerskaber",
+    "Eksport- og importstrategier",
+    "Kulturel forståelse og tilpasning",
+    "Juridiske tilpasninger og overholdelse"
+   ],
+   "values": [
+    2.75,
+    3.0,
+    2.5,
+    4.0,
+    4.0,
+    4.0,
+    2.3333333333333335,
+    1.5,
+    4.0,
+    1.5,
+    2.142857142857143,
+    3.3333333333333335,
+    1.0,
+    1.5,
+    3.0,
+    1.0,
+    3.0,
+    5.0,
+    2.5,
+    3.0,
+    2.0,
+    2.5,
+    2.0,
+    3.0,
+    2.5,
+    3.0,
+    2.6666666666666665,
+    4.0,
+    2.0,
+    2.0,
+    3.0,
+    3.5,
+    3.3333333333333335,
+    1.5,
+    3.5,
+    3.0,
+    3.0,
+    3.5,
+    2.0,
+    3.0,
+    2.3333333333333335,
+    1.0,
+    3.0,
+    2.5,
+    2.5
+   ]
+  },
+  {
+   "name": "Mia Modelsen",
+   "categories": [
+    "Samlet",
+    "Uafhængighed og objektivitet",
+    "Evaluering og udvikling",
+    "Samlet",
+    "Behovsidentifikation og udvikling",
+    "Tilsyn og rådgivning af direktion",
+    "Samlet",
+    "Organisationsudvikling",
+    "Talentudvikling og succession planning",
+    "Kulturel ledelse",
+    "Samlet",
+    "Markedsanalyse og trendidentifikation",
+    "Strategiudvikling",
+    "Strategi-implementering",
+    "Samlet",
+    "Risikoidentifikation",
+    "Risikovurdering",
+    "Risikostyring",
+    "Samlet",
+    "Rådgivning",
+    "Identifikation og evaluering af juridiske risici",
+    "Samlet",
+    "Fusioner, opkøb og partnerskaber",
+    "Kapitalstyring og finansiering",
+    "Økonomisk analyse og rapportering",
+    "Økonomisk planlægning og overvågning",
+    "Samlet",
+    "Interessentidentifikation og -kortlægning",
+    "Kommunikation med interessenter",
+    "Beslutningspåvirkning",
+    "Samlet",
+    "Digitale teknologier og deres anvendelsesområder",
+    "Digital strategi og transformation",
+    "Datastrategier og datastyring",
+    "Cybersikkerhed og databeskyttelse",
+    "Samlet",
+    "E",
+    "S",
+    "G",
+    "ESG-samlet",
+    "Samlet",
+    "Distributionskanaler og partnerskaber",
+    "Eksport- og importstrategier",
+    "Kulturel forståelse og tilpasning",
+    "Juridiske tilpasninger og overholdelse"
+   ],
+   "values": [
+    3.0,
+    5.0,
+    1.0,
+    2.0,
+    2.0,
+    2.0,
+    2.8333333333333335,
+    2.0,
+    4.0,
+    2.5,
+    3.2857142857142856,
+    3.0,
+    2.5,
+    4.5,
+    3.3333333333333335,
+    1.0,
+    5.0,
+    4.0,
+    3.0,
+    3.0,
+    3.0,
+    2.6666666666666665,
+    4.0,
+    2.0,
+    2.5,
+    1.0,
+    3.6666666666666665,
+    3.0,
+    4.0,
+    4.0,
+    2.888888888888889,
+    4.0,
+    2.0,
+    3.0,
+    3.0,
+    3.4285714285714284,
+    3.0,
+    3.0,
+    4.0,
+    4.0,
+    3.5,
+    5.0,
+    4.0,
+    3.5,
+    2.5
+   ]
+  }
+ ]
+}

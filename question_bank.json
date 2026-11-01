@@ -1,0 +1,2716 @@
+{
+ "version": "0.1-test",
+ "source": "Client questionnaire, 2026 Typeform (139 screens, 128 answerable questions)",
+ "notes": [
+  "Scale is 1-5 (decision). Legacy export columns are 0-5 in the old sheet: check before first run.",
+  "legacy_col = raw export column index used by calc.py / structure.json. form_no = question number in the Typeform.",
+  "Form texts are kept verbatim, including typos (flagged in 'text_issues'), per the test decision.",
+  "Peer ratings (module 5) are collected for individual feedback only: report.individual_only = true."
+ ],
+ "scales": {
+  "opinion_1_5": {
+   "min": 1,
+   "max": 5,
+   "labels": {
+    "1": "Slet ikke",
+    "2": "I nogen grad",
+    "3": "I moderat grad",
+    "4": "I høj grad",
+    "5": "I meget høj grad"
+   }
+  },
+  "yes_no": {
+   "values": {
+    "1": "Ja",
+    "0": "Nej"
+   }
+  }
+ },
+ "info_screens": [
+  1,
+  2,
+  3,
+  4,
+  6,
+  7,
+  19,
+  67,
+  126,
+  134,
+  139
+ ],
+ "non_question_screens": {
+  "5": "Dropdown: vælg dit navn (member_select). Stored as member_id."
+ },
+ "questions": [
+  {
+   "id": "intro_name",
+   "form_no": 5,
+   "legacy_col": 1,
+   "module": 0,
+   "type": "member_select",
+   "text": "Vælg dit navn - Dropdown",
+   "chapter": null,
+   "theme": null,
+   "subarea": null,
+   "required": true,
+   "report": {
+    "use": "identity"
+   }
+  },
+  {
+   "id": "age",
+   "form_no": 8,
+   "legacy_col": 2,
+   "module": 1,
+   "type": "number",
+   "text": "Hvad er din alder?",
+   "chapter": "ch1",
+   "theme": "Overblik over sammensætning og diversitet",
+   "subarea": null,
+   "required": true,
+   "validate": {
+    "min": 18,
+    "max": 99
+   },
+   "report": {
+    "use": "stat",
+    "slides": [
+     5,
+     7
+    ]
+   }
+  },
+  {
+   "id": "gender",
+   "form_no": 9,
+   "legacy_col": 3,
+   "module": 1,
+   "type": "single_choice",
+   "text": "Hvilken køn identificerer du sig som?",
+   "options": [
+    "Mand",
+    "Kvinde",
+    "Andet",
+    "Ønsker ikke at oplyse"
+   ],
+   "chapter": "ch1",
+   "theme": "Overblik over sammensætning og diversitet",
+   "subarea": null,
+   "required": true,
+   "text_issues": [
+    "Hvilken køn → Hvilket køn (not changed in test)"
+   ],
+   "report": {
+    "use": "share",
+    "slides": [
+     6
+    ],
+    "note": "legacy calc only counts Mand/Kvinde; shares divide by total n"
+   }
+  },
+  {
+   "id": "tenure",
+   "form_no": 10,
+   "legacy_col": 4,
+   "module": 1,
+   "type": "number",
+   "text": "Hvor mange års anciennitet har du i bestyrelsen?",
+   "chapter": "ch1",
+   "theme": "Overblik over sammensætning og diversitet",
+   "subarea": null,
+   "required": true,
+   "validate": {
+    "min": 0,
+    "max": 60
+   },
+   "report": {
+    "use": "stat",
+    "slides": [
+     5
+    ]
+   }
+  },
+  {
+   "id": "board_training",
+   "form_no": 11,
+   "legacy_col": 5,
+   "module": 1,
+   "type": "yes_no",
+   "text": "Har du en bestyrelsesuddannelse?",
+   "chapter": "ch1",
+   "theme": "Overblik over sammensætning og diversitet",
+   "subarea": null,
+   "required": true,
+   "scale": "yes_no",
+   "report": {
+    "use": "share",
+    "slides": [
+     5,
+     22
+    ]
+   }
+  },
+  {
+   "id": "div_passende",
+   "form_no": 12,
+   "legacy_col": 6,
+   "module": 1,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsen har en passende mangfoldighed?",
+   "chapter": "ch1",
+   "theme": "Oplevelse af arbejdet med mangfoldighed",
+   "subarea": "Mangfoldighed",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     5,
+     23
+    ]
+   }
+  },
+  {
+   "id": "div_fokus",
+   "form_no": 13,
+   "legacy_col": 7,
+   "module": 1,
+   "type": "scale",
+   "text": "Jeg oplever, at vi har et passende fokus på og løbende drøfter mangfoldighed og diversitet i bestyrelsen?",
+   "chapter": "ch1",
+   "theme": "Oplevelse af arbejdet med mangfoldighed",
+   "subarea": "Mangfoldighed",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     8
+    ]
+   }
+  },
+  {
+   "id": "div_planlaegning",
+   "form_no": 14,
+   "legacy_col": 8,
+   "module": 1,
+   "type": "scale",
+   "text": "Jeg oplever, at vi løbende planlægger udskiftning, således at bestyrelsen er bredt sammensat med forskellige erfaringsniveauer og de rette kompetencer?",
+   "chapter": "ch1",
+   "theme": "Oplevelse af arbejdet med mangfoldighed",
+   "subarea": "Mangfoldighed",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     8,
+     9
+    ]
+   }
+  },
+  {
+   "id": "div_forberedelse",
+   "form_no": 15,
+   "legacy_col": 9,
+   "module": 1,
+   "type": "scale",
+   "text": "Jeg oplever, at vi kontinuerligt forbereder nye bestyrelsesmedlemmer, således at nye kandidater er klar, når der skal udskiftes?",
+   "chapter": "ch1",
+   "theme": "Oplevelse af arbejdet med mangfoldighed",
+   "subarea": "Mangfoldighed",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     8,
+     9
+    ]
+   }
+  },
+  {
+   "id": "div_maaltal",
+   "form_no": 16,
+   "legacy_col": 10,
+   "module": 1,
+   "type": "scale",
+   "text": "Jeg oplever, at vi i bestyrelsen aktivt arbejder med måltal for det underrepræsenterede køn?",
+   "chapter": "ch1",
+   "theme": "Oplevelse af arbejdet med mangfoldighed",
+   "subarea": "Mangfoldighed",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     6
+    ]
+   }
+  },
+  {
+   "id": "right_size",
+   "form_no": 17,
+   "legacy_col": 11,
+   "module": 1,
+   "type": "yes_no",
+   "text": "Jeg oplever, at bestyrelsen består af det rigtige antal personer?",
+   "chapter": "ch1",
+   "theme": "Overblik over sammensætning og diversitet",
+   "subarea": null,
+   "required": true,
+   "scale": "yes_no",
+   "encoding_note": "1 = Ja (antal passer); calc.py counts 0 as 'wants other size'",
+   "report": {
+    "use": "count",
+    "slides": [
+     5
+    ]
+   }
+  },
+  {
+   "id": "ideal_size",
+   "form_no": 18,
+   "legacy_col": 12,
+   "module": 1,
+   "type": "number",
+   "text": "Hvor mange mener du, der bør sidde i bestyrelsen?",
+   "chapter": "ch1",
+   "theme": "Overblik over sammensætning og diversitet",
+   "subarea": null,
+   "required": true,
+   "validate": {
+    "min": 3,
+    "max": 20
+   },
+   "report": {
+    "use": "not_used_yet",
+    "note": "calc.py derives 'wants other size' from right_size only"
+   }
+  },
+  {
+   "id": "gw_legitim",
+   "form_no": 20,
+   "legacy_col": 13,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at det er legitimt at sige sin mening.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Beslutningsprocesser",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26
+    ]
+   }
+  },
+  {
+   "id": "gw_drøftelser",
+   "form_no": 21,
+   "legacy_col": 14,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at drøftelserne i bestyrelsen er kendetegnet ved at være åbne, fordomsfrie og afvikles i en god og tillidsfuld atmosfære.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Beslutningsprocesser",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26
+    ]
+   }
+  },
+  {
+   "id": "gw_åben",
+   "form_no": 22,
+   "legacy_col": 15,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsen generelt er åbne og lydhør overfor andres ideer.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Beslutningsprocesser",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26
+    ]
+   }
+  },
+  {
+   "id": "spilleregler_findes",
+   "form_no": 23,
+   "legacy_col": 16,
+   "module": 2,
+   "type": "yes_no",
+   "text": "I vores bestyrelse har vi skriftligt nedskrevne spilleregler og en forretningsorden.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Samarbejdsform",
+   "required": true,
+   "scale": "yes_no",
+   "gate_for": [
+    "gw_spilleregler_følges"
+   ],
+   "report": {
+    "use": "count_yes_of_n",
+    "slides": [
+     31
+    ],
+    "note": "reported as count, never averaged"
+   }
+  },
+  {
+   "id": "gw_spilleregler_følges",
+   "form_no": 24,
+   "legacy_col": 17,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at alle bestyrelsesmedlemmerne er bekendt med og følger de nedskrevne spilleregler og forretningsorden, som er vedtaget af vores bestyrelse.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Beslutningsprocesser",
+   "required": true,
+   "condition": {
+    "question": "spilleregler_findes",
+    "equals": 1
+   },
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26
+    ],
+    "pool_in": "Beslutningsprocesser",
+    "note": "skipped if gate = 0 or blank; never counted as 0"
+   },
+   "text_issues": [
+    "bestyrelsesmedlemmerne → bestyrelsesmedlemmerne is correct; 'vedtaget af vores bestyrelse' fine"
+   ]
+  },
+  {
+   "id": "gw_feedback",
+   "form_no": 25,
+   "legacy_col": 18,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsen generelt er i stand til at modtage individuel feedback.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Konflikthåndtering",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26
+    ]
+   }
+  },
+  {
+   "id": "gw_konflikt",
+   "form_no": 26,
+   "legacy_col": 19,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsen evner at håndtere interne konflikter og uenigheder og i fællesskab finde konstruktive løsninger.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Konflikthåndtering",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26
+    ]
+   }
+  },
+  {
+   "id": "gw_kompetencer_udnyttet",
+   "form_no": 27,
+   "legacy_col": 20,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever generelt, at medlemmernes kompetencer og erfaringer bliver udnyttet på en hensigtsmæssig måde i vores arbejde/samarbejde/projekter.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Rolle- og ansvarsfordeling",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26
+    ]
+   }
+  },
+  {
+   "id": "gw_udvalg",
+   "form_no": 28,
+   "legacy_col": 21,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at vi i tilstrækkelig grad arbejder i udvalg, arbejdsgrupper og/eller komiteer med konkrete opgaver og mål for at fremme effektiviteten og kvaliteten af bestyrelsens arbejde.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Rolle- og ansvarsfordeling",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26,
+     31
+    ]
+   }
+  },
+  {
+   "id": "gw_formel_praksis",
+   "form_no": 29,
+   "legacy_col": 22,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at der er overensstemmelse mellem de formelle hierarkiske strukturer og den reelle praksis, når vi f.eks. skal tage beslutninger og fordele ansvar i bestyrelsen.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Rolle- og ansvarsfordeling",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26
+    ]
+   }
+  },
+  {
+   "id": "gw_rolle",
+   "form_no": 30,
+   "legacy_col": 23,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at der er en tydelig og meningsfuld rolle- og ansvarsfordeling blandt bestyrelsens medlemmer.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Rolle- og ansvarsfordeling",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26,
+     31
+    ],
+    "note": "lowest item in 2025 report (Gns. 3,00)"
+   }
+  },
+  {
+   "id": "gw_tid_moeder",
+   "form_no": 31,
+   "legacy_col": 24,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at vi i bestyrelsen bruger tiden på meningsgivende drøftelser, at træffe beslutninger og lign. aktiviteter, som ikke ville kunne gøres mellem møderne.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Tidsstyring",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26
+    ]
+   }
+  },
+  {
+   "id": "gw_tid_eget",
+   "form_no": 32,
+   "legacy_col": 25,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at jeg har den nødvendige tid til at kunne deltage i alle relevante møder og aktiviteter, forberede mig ordentligt til møderne og udføre de nødvendige opgaver og ansvarsområder som bestyrelsesmedlem.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Tidsstyring",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26
+    ]
+   }
+  },
+  {
+   "id": "gw_tid_deltagelse",
+   "form_no": 33,
+   "legacy_col": 26,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever generelt, at bestyrelsmedlemmerne deltager til møderne og har afsat den nødvendige tid til forberedelse og arbejde mellem møderne.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Tidsstyring",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26
+    ]
+   },
+   "text_issues": [
+    "bestyrelsmedlemmerne → bestyrelsesmedlemmerne"
+   ]
+  },
+  {
+   "id": "gw_formand_opgave",
+   "form_no": 34,
+   "legacy_col": 27,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelseslederen lever fuldt op til sin opgave.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Bestyrelseslederens virke",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26
+    ]
+   }
+  },
+  {
+   "id": "gw_formand_lydhoer",
+   "form_no": 35,
+   "legacy_col": 28,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelseslederen er lydhør, giver plads til alle og er konstruktiv.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Bestyrelseslederens virke",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26
+    ]
+   }
+  },
+  {
+   "id": "gw_formand_moede",
+   "form_no": 36,
+   "legacy_col": 29,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelseslederens mødeledelse er effektiv og pragmatisk.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Bestyrelseslederens virke",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26
+    ]
+   }
+  },
+  {
+   "id": "gw_formand_data",
+   "form_no": 37,
+   "legacy_col": 30,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelseslederen sikrer sig, at relevant dokumentation, data og analyser er tilgængelige, når der træffes beslutninger i bestyrelsen.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Bestyrelseslederens virke",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26
+    ]
+   }
+  },
+  {
+   "id": "gw_materiale_tid",
+   "form_no": 38,
+   "legacy_col": 31,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at vi får materialet forud for bestyrelsesmøderne i tilstrækkelig god tid til, at vi kan forberede os og sætte os ind i indholdet.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Bestyrelsesmateriale",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26
+    ]
+   }
+  },
+  {
+   "id": "gw_materiale_relevant",
+   "form_no": 39,
+   "legacy_col": 32,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsesmaterialet er relevant.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Bestyrelsesmateriale",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26
+    ]
+   }
+  },
+  {
+   "id": "gw_materiale_forstaaelig",
+   "form_no": 40,
+   "legacy_col": 33,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsesmaterialet er forståelig.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Bestyrelsesmateriale",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26
+    ]
+   },
+   "text_issues": [
+    "forståelig → forståeligt (grammar; not changed in test)"
+   ]
+  },
+  {
+   "id": "gw_materiale_beslut",
+   "form_no": 41,
+   "legacy_col": 34,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at kvaliteten og omfanget af bestyrelsesmaterialet er således, at jeg er velinformeret og kvalificeret til at træffe beslutninger på bestyrelsesmøderne.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Bestyrelsesmateriale",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26,
+     31
+    ]
+   }
+  },
+  {
+   "id": "gw_materiale_laesning",
+   "form_no": 42,
+   "legacy_col": 35,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsen generelt læser og sætter sig grundigt ind i bestyrelsesmaterialet forud for bestyrelsesmøderne.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Bestyrelsesmateriale",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26
+    ]
+   }
+  },
+  {
+   "id": "gw_moede_laengde",
+   "form_no": 43,
+   "legacy_col": 36,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsesmøderne har den rette længde.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Bestyrelsesmøderne",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26
+    ]
+   }
+  },
+  {
+   "id": "gw_moede_frekvens",
+   "form_no": 44,
+   "legacy_col": 37,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsesmøderne holdes med en passende frekvens.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Bestyrelsesmøderne",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26
+    ]
+   }
+  },
+  {
+   "id": "gw_moede_antal",
+   "form_no": 45,
+   "legacy_col": 38,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at antallet af bestyrelsesmøder er passende.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens generelle arbejde og effektivitet",
+   "subarea": "Bestyrelsesmøderne",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     26
+    ]
+   }
+  },
+  {
+   "id": "tw_fin_mål",
+   "form_no": 46,
+   "legacy_col": 39,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsen løbende opstiller mål og forventninger til virksomhedens finansielle situation.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens arbejde indenfor de faglige temaer",
+   "subarea": "Finansiel og økonomi",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     27
+    ]
+   }
+  },
+  {
+   "id": "tw_fin_opfoelg",
+   "form_no": 47,
+   "legacy_col": 40,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsen løbende følger op på virksomhedens finansielle situation.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens arbejde indenfor de faglige temaer",
+   "subarea": "Finansiel og økonomi",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     27
+    ]
+   }
+  },
+  {
+   "id": "tw_risiko_identif",
+   "form_no": 48,
+   "legacy_col": 41,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsen løbende identificerer, evaluerer og diskuterer forskelige ricisi, som kan påvirke virksomheden.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens arbejde indenfor de faglige temaer",
+   "subarea": "Risikostyring",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     27
+    ]
+   },
+   "text_issues": [
+    "forskelige → forskellige; ricisi → risici"
+   ]
+  },
+  {
+   "id": "tw_risiko_it",
+   "form_no": 49,
+   "legacy_col": 42,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsen sikre sig, at virksomheden har passende organisatoriske og tekniske foranstaltninger på plads i relation til IT- og cyberrisici.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens arbejde indenfor de faglige temaer",
+   "subarea": "Risikostyring",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     27
+    ]
+   },
+   "text_issues": [
+    "sikre sig → sikrer sig"
+   ]
+  },
+  {
+   "id": "tw_forretning_strategi",
+   "form_no": 50,
+   "legacy_col": 43,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsen evner at sikre en strategi for virksomhedens lang- og kortsigtede udvikling.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens arbejde indenfor de faglige temaer",
+   "subarea": "Forretningsudvikling",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     27
+    ]
+   }
+  },
+  {
+   "id": "tw_forretning_vaerdi",
+   "form_no": 51,
+   "legacy_col": 44,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsen bidrager til virksomhedens værdiskabelse gennem f.eks. strategisk planlægning, beslutningstagning og implementering af initiativer, der fremmer virksomhedens mål og resultater.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens arbejde indenfor de faglige temaer",
+   "subarea": "Forretningsudvikling",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     27
+    ]
+   }
+  },
+  {
+   "id": "tw_dir_samarbejde",
+   "form_no": 52,
+   "legacy_col": 45,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsen har det bedst mulige samarbejde med direktionen, og at samarbejdet er værdiskabende for direktionens daglige arbejde i virksomheden.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens arbejde indenfor de faglige temaer",
+   "subarea": "Direktionen",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     27
+    ]
+   }
+  },
+  {
+   "id": "tw_dir_evaluering",
+   "form_no": 53,
+   "legacy_col": 46,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsen løbende evaluerer direktionens arbejde, resulater og sammensætning.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens arbejde indenfor de faglige temaer",
+   "subarea": "Direktionen",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     27
+    ]
+   },
+   "text_issues": [
+    "resulater → resultater"
+   ]
+  },
+  {
+   "id": "tw_dir_ansvar",
+   "form_no": 54,
+   "legacy_col": 47,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at der er klarhed og enighed omkring ansvars- og opgavefordeling mellem bestyrelsen og direktionen.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens arbejde indenfor de faglige temaer",
+   "subarea": "Direktionen",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     27
+    ]
+   }
+  },
+  {
+   "id": "tw_org",
+   "form_no": 55,
+   "legacy_col": 48,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsen løbende beskæftiger sig med virksomhedens organisatoriske forhold og medarbejdersammensætning (ledere, kritiske kompetencer, medarbejderstrategi mv.)",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens arbejde indenfor de faglige temaer",
+   "subarea": "Organisatoriske forhold",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     27
+    ]
+   }
+  },
+  {
+   "id": "tw_jura",
+   "form_no": 56,
+   "legacy_col": 49,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsen løbende har øje for og beskæftiger sig med, at virksomheden lever op til gældende lovgivning.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens arbejde indenfor de faglige temaer",
+   "subarea": "Juridiske forhold",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     27
+    ]
+   }
+  },
+  {
+   "id": "tw_marked_info",
+   "form_no": 57,
+   "legacy_col": 50,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsens løbende holdes opdateret på ændringer i markedet hvorpå virksomhed opererer - både nationalt og internationalt.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens arbejde indenfor de faglige temaer",
+   "subarea": "Markedet og internationalisering",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     27
+    ]
+   },
+   "text_issues": [
+    "bestyrelsens → bestyrelsen; virksomhed → virksomheden"
+   ]
+  },
+  {
+   "id": "tw_marked_nye",
+   "form_no": 58,
+   "legacy_col": 51,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsen løbende beskæftiger sig med relevante nye potentielle markeder eller markedsandele - både nationalt og internationalt.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens arbejde indenfor de faglige temaer",
+   "subarea": "Markedet og internationalisering",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     27
+    ]
+   }
+  },
+  {
+   "id": "tw_digital",
+   "form_no": 59,
+   "legacy_col": 52,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsen løbende arbejder med en klar og veldefineret digital strategi, der er i tråd med virksomhedens overordnede mål og værdiskabelse.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens arbejde indenfor de faglige temaer",
+   "subarea": "Digitalisering og teknologi",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     27
+    ]
+   }
+  },
+  {
+   "id": "tw_esg_strategi",
+   "form_no": 60,
+   "legacy_col": 53,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsen integrerer bæredygtighed i virksomhedens overordnede strategi.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens arbejde indenfor de faglige temaer",
+   "subarea": "Bæredygtighed og ESG",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     27
+    ]
+   }
+  },
+  {
+   "id": "tw_esg_rapport",
+   "form_no": 61,
+   "legacy_col": 54,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsen løbende holdes opdateret på virksomhedens ESG-rapporteringsarbejde og måltal i relation hertil.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens arbejde indenfor de faglige temaer",
+   "subarea": "Bæredygtighed og ESG",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     27,
+     32
+    ],
+    "note": "lowest item in 2025 report (Gns. 1,63)"
+   }
+  },
+  {
+   "id": "tw_esg_miljoe",
+   "form_no": 62,
+   "legacy_col": 55,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsen aktivt beskæftiger sig med, hvordan virksomhedens miljøpåvirkning kan reduceres.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens arbejde indenfor de faglige temaer",
+   "subarea": "Bæredygtighed og ESG",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     27
+    ]
+   }
+  },
+  {
+   "id": "tw_esg_social",
+   "form_no": 63,
+   "legacy_col": 56,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsen beskæftiger sig aktivt med social bæredygtighed, både internt i virksomheden og i værdikæden.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens arbejde indenfor de faglige temaer",
+   "subarea": "Bæredygtighed og ESG",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     27
+    ]
+   }
+  },
+  {
+   "id": "tw_esg_transp",
+   "form_no": 64,
+   "legacy_col": 57,
+   "module": 2,
+   "type": "scale",
+   "text": "Jeg oplever, at bestyrelsen aktivt beskæftiger sig med at sikre transparens og ansvarlighed i virksomhedens ledelse.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens arbejde indenfor de faglige temaer",
+   "subarea": "Bæredygtighed og ESG",
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     27
+    ]
+   }
+  },
+  {
+   "id": "priority_ranking",
+   "form_no": 65,
+   "legacy_col": 58,
+   "module": 2,
+   "type": "ranking",
+   "text": "Du bedes prioritere nedenstående temaer efter, hvad du mener er vigtigst, at bestyrelsen beskæftiger sig med på nuværende tidspunkt.",
+   "options_source": "10 topics as on report slide 28 (Forretningsudvikling, Ledelsesudvikling, Økonomistyring, Interessenter og stakeholder, Organisatoriske forhold, Risikostyring, Digitalisering og teknologi, Internationalisering, Bæredygtighed og ESG, Juridiske forhold). Confirm exact option labels in the form.",
+   "options": [
+    "Forretningsudvikling",
+    "Ledelse",
+    "Økonomistyring",
+    "Interessenter og stakeholders",
+    "Organisatoriske forhold",
+    "Riskostyring",
+    "Digitalisering og teknologi",
+    "Internationalisering",
+    "Bæredygtighed og ESG",
+    "Juridiske forhold"
+   ],
+   "options_confirmed": "Labels verbatim from the 2026 export (column 58), including the form typo 'Riskostyring'. They differ from the slide-28 names in options_source: Ledelse / Ledelsesudvikling, Interessenter og stakeholders / stakeholder, Riskostyring / Risikostyring.",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens prioritering af faglige temaer",
+   "subarea": null,
+   "required": true,
+   "rank_range": [
+    1,
+    10
+   ],
+   "report": {
+    "use": "avg_rank",
+    "slides": [
+     28,
+     29,
+     30
+    ],
+    "note": "lower average = higher priority"
+   }
+  },
+  {
+   "id": "priority_alignment",
+   "form_no": 66,
+   "legacy_col": 59,
+   "module": 2,
+   "type": "scale",
+   "text": "I hvilken grad oplever du, at bestyrelsens nuværende prioritering og fokus følger den prioriterede rækkefølge, som du netop har angivet?",
+   "chapter": "ch3",
+   "theme": "Bestyrelsens prioritering af faglige temaer",
+   "subarea": null,
+   "required": true,
+   "scale": "opinion_1_5",
+   "report": {
+    "use": "mean",
+    "slides": [
+     28
+    ]
+   }
+  },
+  {
+   "id": "c_uafh_objektiv",
+   "form_no": 68,
+   "legacy_col": 60,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har stor erfaring med og er i stand til at opretholde uafhængighed og objektivitet i bestyrelsesarbejdet.",
+   "chapter": "ch2",
+   "theme": "Bestyrelsesdisciplin",
+   "subarea": "Uafhængighed og objektivitet",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     13
+    ]
+   }
+  },
+  {
+   "id": "c_uafh_analyse",
+   "form_no": 69,
+   "legacy_col": 61,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg er dygtig til at træffe beslutninger baseret på objektive analyser og vurderinger, og lader mig ikke drive af intuition og mavefornemmelser.",
+   "chapter": "ch2",
+   "theme": "Bestyrelsesdisciplin",
+   "subarea": "Uafhængighed og objektivitet",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     13
+    ]
+   }
+  },
+  {
+   "id": "c_eval_strategi",
+   "form_no": 70,
+   "legacy_col": 62,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har betydelig erfaring med evaluering af strategiske beslutninger og det arbejde en bestyrelse udfører.",
+   "chapter": "ch2",
+   "theme": "Bestyrelsesdisciplin",
+   "subarea": "Evaluering og udvikling",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     13
+    ]
+   }
+  },
+  {
+   "id": "c_eval_proces",
+   "form_no": 71,
+   "legacy_col": 63,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg er dygtig til at identificere og implementere forbedringer i bestyrelsens arbejdsprocesser.",
+   "chapter": "ch2",
+   "theme": "Bestyrelsesdisciplin",
+   "subarea": "Evaluering og udvikling",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     13
+    ]
+   }
+  },
+  {
+   "id": "c_ledelse_udvikle",
+   "form_no": 72,
+   "legacy_col": 64,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har stor erfaring med at lede og udvikle medarbejdere på strategisk niveau.",
+   "chapter": "ch2",
+   "theme": "Ledelsesudvikling",
+   "subarea": "Behovsidentifikation og udvikling",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     15
+    ]
+   }
+  },
+  {
+   "id": "c_ledelse_behov",
+   "form_no": 73,
+   "legacy_col": 65,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har indgående viden om og erfaring med at identificere ledelsesmæssige behov for dermed at kunne indsætte den korrekte leder.",
+   "chapter": "ch2",
+   "theme": "Ledelsesudvikling",
+   "subarea": "Behovsidentifikation og udvikling",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     15
+    ]
+   }
+  },
+  {
+   "id": "c_ledelse_tilsyn",
+   "form_no": 74,
+   "legacy_col": 66,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har solid erfaring med effektivt tilsyn af og rådgivning til direktion og ledelsesteams med henblik på at bidrage til deres udvikling og succes.",
+   "chapter": "ch2",
+   "theme": "Ledelsesudvikling",
+   "subarea": "Tilsyn og rådgivning af direktion",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     15
+    ]
+   }
+  },
+  {
+   "id": "c_org_struktur",
+   "form_no": 75,
+   "legacy_col": 67,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har indgående viden om og erfaring med at identificere effektive organisatoriske strukturer, processer og politikker, der understøtter virksomhedens vækst, mål og behov.",
+   "chapter": "ch2",
+   "theme": "Organisatoriske forhold",
+   "subarea": "Organisationsudvikling",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     16
+    ]
+   }
+  },
+  {
+   "id": "c_org_implement",
+   "form_no": 76,
+   "legacy_col": 68,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har solid erfaring med at implementere organisatoriske strukturer, processer og politikker, der effektivt og succesfuldt understøtter virksomhedens strategi for organisationsudvikling.",
+   "chapter": "ch2",
+   "theme": "Organisatoriske forhold",
+   "subarea": "Organisationsudvikling",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     16
+    ]
+   }
+  },
+  {
+   "id": "c_org_talent",
+   "form_no": 77,
+   "legacy_col": 69,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har indgående viden om og erfaring med at identificere tiltag og sammensætte processer, der kan tiltrække, udvikle og fastholde talentfulde medarbejdere.",
+   "chapter": "ch2",
+   "theme": "Organisatoriske forhold",
+   "subarea": "Talentudvikling og succession planning",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     16
+    ]
+   }
+  },
+  {
+   "id": "c_org_succession",
+   "form_no": 78,
+   "legacy_col": 70,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har solid erfaring med at udvikle en strategi for og implementere tiltag i relation til udskiftningsplanlægning og videregivelse af ledelsesroller.",
+   "chapter": "ch2",
+   "theme": "Organisatoriske forhold",
+   "subarea": "Talentudvikling og succession planning",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     16
+    ]
+   }
+  },
+  {
+   "id": "c_org_kultur_tiltag",
+   "form_no": 79,
+   "legacy_col": 71,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har indgående viden om og erfaring med at udarbejde og implementere tiltag, der med succes fremmer en positiv og sund organisationskultur.",
+   "chapter": "ch2",
+   "theme": "Organisatoriske forhold",
+   "subarea": "Kulturel ledelse",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     16
+    ]
+   }
+  },
+  {
+   "id": "c_org_kultur_kendskab",
+   "form_no": 80,
+   "legacy_col": 72,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har indgående kendskab til organisationens kultur og værdier og arbejder aktivt på at fremme dem.",
+   "chapter": "ch2",
+   "theme": "Organisatoriske forhold",
+   "subarea": "Kulturel ledelse",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     16
+    ]
+   }
+  },
+  {
+   "id": "c_fb_marked",
+   "form_no": 81,
+   "legacy_col": 73,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har stor erfaring med at analysere markedet og identificere trends, der påvirker virksomheden.",
+   "chapter": "ch2",
+   "theme": "Forretningsudvikling",
+   "subarea": "Markedsanalyse og trendidentifikation",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     14
+    ]
+   }
+  },
+  {
+   "id": "c_fb_branche",
+   "form_no": 82,
+   "legacy_col": 74,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har en dybdegående viden om branchen og er i stand til at give indsigt og perspektiver baseret på min erfaring.",
+   "chapter": "ch2",
+   "theme": "Forretningsudvikling",
+   "subarea": "Markedsanalyse og trendidentifikation",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     14
+    ]
+   }
+  },
+  {
+   "id": "c_fb_kunde",
+   "form_no": 83,
+   "legacy_col": 75,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har indgående viden om og erfaring med at forstå og analysere kundens behov samt at omsætte dette til værdifulde produkter, tjenester mv.",
+   "chapter": "ch2",
+   "theme": "Forretningsudvikling",
+   "subarea": "Markedsanalyse og trendidentifikation",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     14
+    ]
+   }
+  },
+  {
+   "id": "c_fb_ressource",
+   "form_no": 84,
+   "legacy_col": 76,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har indgående viden om og erfaring med at udvikle og implementere strategier, der sikrer en effektiv ressourceallokering og skaber værdi for virksomheden og dens interessenter.",
+   "chapter": "ch2",
+   "theme": "Forretningsudvikling",
+   "subarea": "Strategiudvikling",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     14
+    ]
+   }
+  },
+  {
+   "id": "c_fb_swot",
+   "form_no": 85,
+   "legacy_col": 77,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg er i stand til at vurdere virksomhedens interne styrker og svagheder for at identificere områder, der kræver strategisk fokus og forbedring.",
+   "chapter": "ch2",
+   "theme": "Forretningsudvikling",
+   "subarea": "Strategiudvikling",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     14
+    ]
+   }
+  },
+  {
+   "id": "c_fb_impl_raad",
+   "form_no": 86,
+   "legacy_col": 78,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg er i stand til at rådgive i forhold til overvejelser og tiltag i forbindelse med strategiimplementering.",
+   "chapter": "ch2",
+   "theme": "Forretningsudvikling",
+   "subarea": "Strategi-implementering",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     14
+    ]
+   }
+  },
+  {
+   "id": "c_fb_impl_overvaag",
+   "form_no": 87,
+   "legacy_col": 79,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg er dygtig til at overvåge og evaluere implementeringen af strategiske initiativer.",
+   "chapter": "ch2",
+   "theme": "Forretningsudvikling",
+   "subarea": "Strategi-implementering",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     14
+    ]
+   }
+  },
+  {
+   "id": "c_risk_identif",
+   "form_no": 88,
+   "legacy_col": 80,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har indgående viden om og erfaring med at identificere forskellige typer af risici, der kan påvirke virksomheden.",
+   "chapter": "ch2",
+   "theme": "Risikostyring",
+   "subarea": "Risikoidentifikation",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     18
+    ]
+   }
+  },
+  {
+   "id": "c_risk_vurdering",
+   "form_no": 89,
+   "legacy_col": 81,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har erfaring med at vurdere og prioritere risikosandsynligheder samt potentiel indvirkning og konsekvenser for virksomheden på strategisk niveau.",
+   "chapter": "ch2",
+   "theme": "Risikostyring",
+   "subarea": "Risikovurdering",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     18
+    ]
+   }
+  },
+  {
+   "id": "c_risk_styring",
+   "form_no": 90,
+   "legacy_col": 82,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg er i stand til at evaluere og give inputs til forbedring virksomhedens risikostyringsstrategi og -praksis.",
+   "chapter": "ch2",
+   "theme": "Risikostyring",
+   "subarea": "Risikostyring",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     18
+    ]
+   },
+   "text_issues": [
+    "forbedring → forbedring af"
+   ]
+  },
+  {
+   "id": "c_jura_raad",
+   "form_no": 91,
+   "legacy_col": 83,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har en solid jurdisk baggrund og er i stand til at rådgive om jurdiske aspekter, der påvirker virksomheden.",
+   "chapter": "ch2",
+   "theme": "Juridiske forhold",
+   "subarea": "Rådgivning",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     23
+    ]
+   },
+   "text_issues": [
+    "jurdisk → juridisk; jurdiske → juridiske"
+   ]
+  },
+  {
+   "id": "c_jura_risiko",
+   "form_no": 92,
+   "legacy_col": 84,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har betydelig ekspertise og praktisk erfaring med at identificere og evaluere juridiske risici, herunder om virksomheden overholder gældende lovgivning, kontraktlige forpligtelser og betydningen af ny lovgivning/regulering.",
+   "chapter": "ch2",
+   "theme": "Juridiske forhold",
+   "subarea": "Identifikation og evaluering af juridiske risici",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     23
+    ]
+   }
+  },
+  {
+   "id": "c_fin_fusion",
+   "form_no": 93,
+   "legacy_col": 85,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har indgående viden om og erfaring med at identificere og vurdere potentielle fusioner, opkøb og partnerskaber.",
+   "chapter": "ch2",
+   "theme": "Økonomistyring",
+   "subarea": "Fusioner, opkøb og partnerskaber",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     19
+    ]
+   }
+  },
+  {
+   "id": "c_fin_dd",
+   "form_no": 94,
+   "legacy_col": 86,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har omfattende viden om og erfaring med due-dilligence-processer.",
+   "chapter": "ch2",
+   "theme": "Økonomistyring",
+   "subarea": "Fusioner, opkøb og partnerskaber",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     19
+    ]
+   },
+   "text_issues": [
+    "due-dilligence → due diligence"
+   ]
+  },
+  {
+   "id": "c_fin_kapital",
+   "form_no": 95,
+   "legacy_col": 87,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har indgående viden om forskellige kapitalstyringsmuligheder, herunder investering, finansiering og udbyttepolitik.",
+   "chapter": "ch2",
+   "theme": "Økonomistyring",
+   "subarea": "Kapitalstyring og finansiering",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     19
+    ]
+   }
+  },
+  {
+   "id": "c_fin_regnskab",
+   "form_no": 96,
+   "legacy_col": 88,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg kan med stor sikkerhed læse et virksomhedsregnskab.",
+   "chapter": "ch2",
+   "theme": "Økonomistyring",
+   "subarea": "Økonomisk analyse og rapportering",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     19
+    ]
+   }
+  },
+  {
+   "id": "c_fin_rapport",
+   "form_no": 97,
+   "legacy_col": 89,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har dybdegående forståelse for økonomiske rapporter og kan analysere dem effektivt for at identificere økonomiske risici og muligheder.",
+   "chapter": "ch2",
+   "theme": "Økonomistyring",
+   "subarea": "Økonomisk analyse og rapportering",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     19
+    ]
+   }
+  },
+  {
+   "id": "c_fin_budget",
+   "form_no": 98,
+   "legacy_col": 90,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har omfattende viden om og erfaring med at identificere klare mål, vurdere budgetter og konsekvent at overvåge den økonomiske ydeevne for at sikre virksomhedens økonomiske sundhed og vækst.",
+   "chapter": "ch2",
+   "theme": "Økonomistyring",
+   "subarea": "Økonomisk planlægning og overvågning",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     19
+    ]
+   }
+  },
+  {
+   "id": "c_int_kort",
+   "form_no": 99,
+   "legacy_col": 91,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har indgående kendskab til at identificere og kortlægge både interne og eksterne interessenter og evner at forstå deres forventninger og påvirkninger på virksomheden.",
+   "chapter": "ch2",
+   "theme": "Interessenter og stakeholdermanagement",
+   "subarea": "Interessentidentifikation og -kortlægning",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     17
+    ]
+   }
+  },
+  {
+   "id": "c_int_komm",
+   "form_no": 100,
+   "legacy_col": 92,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har solid erfaring med effektivt at kommunikere virksomhedens strategi og mål til interessenterne.",
+   "chapter": "ch2",
+   "theme": "Interessenter og stakeholdermanagement",
+   "subarea": "Kommunikation med interessenter",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     17
+    ]
+   }
+  },
+  {
+   "id": "c_int_beslut",
+   "form_no": 101,
+   "legacy_col": 93,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har erfaring med og formår at give kvalificerede inputs til, hvordan beslutninger vil påvirke relevante interessenter, og hvordan de vil reagere på disse beslutninger.",
+   "chapter": "ch2",
+   "theme": "Interessenter og stakeholdermanagement",
+   "subarea": "Beslutningspåvirkning",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     17
+    ]
+   }
+  },
+  {
+   "id": "c_dig_teknologi",
+   "form_no": 102,
+   "legacy_col": 94,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har indgående viden om og indsigt i forskellige digitale teknologier og deres anvendelsesområder.",
+   "chapter": "ch2",
+   "theme": "Digitalisering og teknologi",
+   "subarea": "Digitale teknologier og deres anvendelsesområder",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     20
+    ]
+   }
+  },
+  {
+   "id": "c_dig_virkning",
+   "form_no": 103,
+   "legacy_col": 95,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har indgående viden om og erfaring med forskellige teknologiers potentielle indvirkning på virksomhedens aktiviteter og konkurrenceevne.",
+   "chapter": "ch2",
+   "theme": "Digitalisering og teknologi",
+   "subarea": "Digitale teknologier og deres anvendelsesområder",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     20
+    ]
+   }
+  },
+  {
+   "id": "c_dig_strategi",
+   "form_no": 104,
+   "legacy_col": 96,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har omfattende erfaring med at udvikle en virksomhedens digitale strategi.",
+   "chapter": "ch2",
+   "theme": "Digitalisering og teknologi",
+   "subarea": "Digital strategi og transformation",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     20
+    ]
+   },
+   "text_issues": [
+    "en virksomhedens → virksomhedens"
+   ]
+  },
+  {
+   "id": "c_dig_transform",
+   "form_no": 105,
+   "legacy_col": 97,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg er har stort kendskab til mulige strategiske initiativer for digital transformation og implementering, samt faldgrupper og mulige udfodringer ved implementering.",
+   "chapter": "ch2",
+   "theme": "Digitalisering og teknologi",
+   "subarea": "Digital strategi og transformation",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     20
+    ]
+   },
+   "text_issues": [
+    "Jeg er har → Jeg har; udfodringer → udfordringer"
+   ]
+  },
+  {
+   "id": "c_dig_teknol_eval",
+   "form_no": 106,
+   "legacy_col": 98,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har stor erfaring med at evaluere og integrere nye teknologier i virksomhedens strategiske planer.",
+   "chapter": "ch2",
+   "theme": "Digitalisering og teknologi",
+   "subarea": "Digital strategi og transformation",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     20
+    ]
+   }
+  },
+  {
+   "id": "c_data_viden",
+   "form_no": 107,
+   "legacy_col": 99,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har indgående viden om datastrategier.",
+   "chapter": "ch2",
+   "theme": "Digitalisering og teknologi",
+   "subarea": "Datastrategier og datastyring",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     20
+    ]
+   }
+  },
+  {
+   "id": "c_data_styring",
+   "form_no": 108,
+   "legacy_col": 100,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har dybdegående viden om og erfaring med at identificere og udnytte virksomhedens dataressourcer, herunder datagovernance, databeskyttelse og datadrevet beslutningstagning.",
+   "chapter": "ch2",
+   "theme": "Digitalisering og teknologi",
+   "subarea": "Datastrategier og datastyring",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     20
+    ]
+   }
+  },
+  {
+   "id": "c_cyber_viden",
+   "form_no": 109,
+   "legacy_col": 101,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har indgående viden om og forståelse for cybersikkerhedsrisici.",
+   "chapter": "ch2",
+   "theme": "Digitalisering og teknologi",
+   "subarea": "Cybersikkerhed og databeskyttelse",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     20
+    ]
+   }
+  },
+  {
+   "id": "c_cyber_trusler",
+   "form_no": 110,
+   "legacy_col": 102,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har solid erfaring med at evaluere og håndtere trusler, rådgive om passende sikkerhedsforanstaltninger og at overholde databeskyttelseslovgivning.",
+   "chapter": "ch2",
+   "theme": "Digitalisering og teknologi",
+   "subarea": "Cybersikkerhed og databeskyttelse",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     20
+    ]
+   }
+  },
+  {
+   "id": "c_esg_strategi",
+   "form_no": 111,
+   "legacy_col": 103,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har stor erfaring med at integrere bæredygtighed i virksomhedens overordnede strategi.",
+   "chapter": "ch2",
+   "theme": "Bæredygtighed og ESG",
+   "subarea": "ESG-samlet",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     22
+    ]
+   }
+  },
+  {
+   "id": "c_esg_e_raad",
+   "form_no": 112,
+   "legacy_col": 104,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har omfattende erfaring med at rådgive om miljømæssige aspekter af ESG.",
+   "chapter": "ch2",
+   "theme": "Bæredygtighed og ESG",
+   "subarea": "E",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     22
+    ]
+   }
+  },
+  {
+   "id": "c_esg_e_strategi",
+   "form_no": 113,
+   "legacy_col": 105,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg er dygtig til at udvikle og implementere miljøstrategier, der reducerer virksomhedens miljøpåvirkning.",
+   "chapter": "ch2",
+   "theme": "Bæredygtighed og ESG",
+   "subarea": "E",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     22
+    ]
+   }
+  },
+  {
+   "id": "c_esg_s_raad",
+   "form_no": 114,
+   "legacy_col": 106,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har betydelig erfaring med at rådgive om sociale aspekter af ESG - både ift. interne forhold og forhold i virksomhedens værdikæde.",
+   "chapter": "ch2",
+   "theme": "Bæredygtighed og ESG",
+   "subarea": "S",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     22
+    ]
+   }
+  },
+  {
+   "id": "c_esg_s_strategi",
+   "form_no": 115,
+   "legacy_col": 107,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg er dygtig til at udvikle og implementere strategier, der fremmer social ansvarlighed.",
+   "chapter": "ch2",
+   "theme": "Bæredygtighed og ESG",
+   "subarea": "S",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     22
+    ]
+   }
+  },
+  {
+   "id": "c_esg_g_raad",
+   "form_no": 116,
+   "legacy_col": 108,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har stor erfaring med at rådgive om governance-aspekter af ESG.",
+   "chapter": "ch2",
+   "theme": "Bæredygtighed og ESG",
+   "subarea": "G",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     22
+    ]
+   }
+  },
+  {
+   "id": "c_esg_governance",
+   "form_no": 117,
+   "legacy_col": 109,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har indgående viden om og erfaring med evaluering og tilpasning af virksomhedens strukturer, processer og retningslinjer med henblik på at skabe transparens og skabe et solidt fundament for virksomhedens eksistens.",
+   "chapter": "ch2",
+   "theme": "Bæredygtighed og ESG",
+   "subarea": "ESG-samlet",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     22
+    ]
+   }
+  },
+  {
+   "id": "c_int_distrib",
+   "form_no": 118,
+   "legacy_col": 110,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg besidder omfattende viden om og erfaring med valg af distributionskanaler, etablering af internationale partnerskaber og tilpasning af produkter og tjenester til at imødekomme globale markeders krav og præferencer.",
+   "chapter": "ch2",
+   "theme": "Internationalisering",
+   "subarea": "Distributionskanaler og partnerskaber",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     21
+    ]
+   }
+  },
+  {
+   "id": "c_int_eksport",
+   "form_no": 119,
+   "legacy_col": 111,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg besidder en solid baggrund og praktisk erfaring inden for udvikling og implementering af strategier for eksport og import.",
+   "chapter": "ch2",
+   "theme": "Internationalisering",
+   "subarea": "Eksport- og importstrategier",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     21
+    ]
+   }
+  },
+  {
+   "id": "c_int_kultur_norm",
+   "form_no": 120,
+   "legacy_col": 112,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg er fortrolig med lokale normer, værdier og arbejdsmoral i forskellige kulturer og kan effektivt tilpasse virksomhedens strategi og praksis for at sikre vellykkede forretningsaktiviteter og etablering af bæredygtige relationer på tværs af kulturelle grænser.",
+   "chapter": "ch2",
+   "theme": "Internationalisering",
+   "subarea": "Kulturel forståelse og tilpasning",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     21
+    ]
+   }
+  },
+  {
+   "id": "c_int_kultur_udf",
+   "form_no": 121,
+   "legacy_col": 113,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har omfattende ekspertise og erfaring med at håndtere kulturelle udfordringer i internationale forretningsaktiviteter.",
+   "chapter": "ch2",
+   "theme": "Internationalisering",
+   "subarea": "Kulturel forståelse og tilpasning",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     21
+    ]
+   }
+  },
+  {
+   "id": "c_int_jura_erf",
+   "form_no": 122,
+   "legacy_col": 114,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg har erfaring med at håndtere juridiske tilpasninger i et internationalt perspektiv.",
+   "chapter": "ch2",
+   "theme": "Internationalisering",
+   "subarea": "Juridiske tilpasninger og overholdelse",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     21
+    ]
+   }
+  },
+  {
+   "id": "c_int_jura_navig",
+   "form_no": 123,
+   "legacy_col": 115,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg er fortrolig med at navigere i komplekse juridiske landskaber og sikre, at virksomhedens aktiviteter er i overensstemmelse med lokale lovgivninger og regler på internationale markeder.",
+   "chapter": "ch2",
+   "theme": "Internationalisering",
+   "subarea": "Juridiske tilpasninger og overholdelse",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "self",
+   "report": {
+    "use": "mean",
+    "slides": [
+     21
+    ]
+   }
+  },
+  {
+   "id": "board_area_ratings",
+   "form_no": 124,
+   "legacy_col": "116-126",
+   "module": 3,
+   "type": "matrix_scale",
+   "text": "Vurder i hvor høj grad, du oplever, at bestyrelsen samlet besidder de nødvendige kompetencer indenfor hvert af nedenstående områder",
+   "scale": "opinion_1_5",
+   "rows": [
+    {
+     "row_id": "bestyrelsesdisciplin",
+     "label": "Bestyrelsesdisciplin",
+     "legacy_col": 116
+    },
+    {
+     "row_id": "organisatoriske_forhold",
+     "label": "Organisatoriske forhold",
+     "legacy_col": 117
+    },
+    {
+     "row_id": "ledelse",
+     "label": "Ledelse og ledelsesudvikling",
+     "legacy_col": 118
+    },
+    {
+     "row_id": "interessenter",
+     "label": "Interessenter og stakeholdermanagement",
+     "legacy_col": 119
+    },
+    {
+     "row_id": "forretningsudvikling",
+     "label": "Forretningsudvikling",
+     "legacy_col": 120
+    },
+    {
+     "row_id": "risikostyring",
+     "label": "Risikostyring",
+     "legacy_col": 121
+    },
+    {
+     "row_id": "juridiske",
+     "label": "Juridiske forhold",
+     "legacy_col": 122
+    },
+    {
+     "row_id": "oekonomistyring",
+     "label": "Økonomistyring",
+     "legacy_col": 123
+    },
+    {
+     "row_id": "internationalisering",
+     "label": "Internationalisering",
+     "legacy_col": 124
+    },
+    {
+     "row_id": "digitalisering",
+     "label": "Digitalisering og teknologi",
+     "legacy_col": 125
+    },
+    {
+     "row_id": "baeredygtighed",
+     "label": "Bæredygtighed og ESG",
+     "legacy_col": 126
+    }
+   ],
+   "chapter": "ch2",
+   "theme": "Bestyrelsens kompetencer",
+   "subarea": null,
+   "required": true,
+   "report": {
+    "use": "mean",
+    "slides": [
+     11,
+     12
+    ]
+   },
+   "perspective": "board",
+   "text_issues": [
+    "Matrix row labels not in the form export; taken from the legacy export (verify)"
+   ]
+  },
+  {
+   "id": "team_competence_attention",
+   "form_no": 125,
+   "legacy_col": 127,
+   "module": 3,
+   "type": "scale",
+   "text": "Jeg oplever, at vi i bestyrelsen er opmærksomme på vores kompetencesammensætning og tager højde for den, når nye bestyrelsesmedlemmer kommer til?",
+   "chapter": "ch2",
+   "theme": "Bestyrelsens kompetencer",
+   "subarea": null,
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "board",
+   "report": {
+    "use": "mean",
+    "slides": [
+     12
+    ]
+   }
+  },
+  {
+   "id": "ind_ledelse",
+   "form_no": 127,
+   "legacy_col": 128,
+   "module": 4,
+   "type": "yes_no",
+   "text": "Jeg er eller har inden for de seneste fem år været medlem af direktionen eller blandt ledende medarbejdere i selskabet, et datterselskab eller et associeret selskab?",
+   "chapter": "ch4",
+   "theme": "Uafhængighed",
+   "subarea": null,
+   "required": true,
+   "scale": "yes_no",
+   "report": {
+    "use": "count_yes",
+    "slides": [
+     34
+    ]
+   }
+  },
+  {
+   "id": "ind_vederlag",
+   "form_no": 128,
+   "legacy_col": 129,
+   "module": 4,
+   "type": "yes_no",
+   "text": "Jeg har inden for de seneste fem år modtaget vederlag fra selskabet, koncernen, et datterselskab eller et associeret selskab i anden egenskab end som medlem af bestyrelsen?",
+   "chapter": "ch4",
+   "theme": "Uafhængighed",
+   "subarea": null,
+   "required": true,
+   "scale": "yes_no",
+   "report": {
+    "use": "count_yes",
+    "slides": [
+     34
+    ]
+   }
+  },
+  {
+   "id": "ind_aktionaer",
+   "form_no": 129,
+   "legacy_col": 130,
+   "module": 4,
+   "type": "yes_no",
+   "text": "Jeg repræsenterer eller har tilknytning til en kontrollerende aktionær i selskabet?",
+   "chapter": "ch4",
+   "theme": "Uafhængighed",
+   "subarea": null,
+   "required": true,
+   "scale": "yes_no",
+   "report": {
+    "use": "count_yes",
+    "slides": [
+     34
+    ]
+   }
+  },
+  {
+   "id": "ind_forretning",
+   "form_no": 130,
+   "legacy_col": 131,
+   "module": 4,
+   "type": "yes_no",
+   "text": "Jeg har inden for de seneste år haft en forretningsrelation (personlig eller indirekte som partner, ansat, aktionær, kunde, leverandør eller ledelsesmedlem i selskaber med tilsvarende forbindelse) med selskabet, et datterselskab eller et associeret selskab, som er væsentligt for selskabet og eller forretningsrelationen?",
+   "chapter": "ch4",
+   "theme": "Uafhængighed",
+   "subarea": null,
+   "required": true,
+   "scale": "yes_no",
+   "report": {
+    "use": "count_yes",
+    "slides": [
+     34
+    ]
+   }
+  },
+  {
+   "id": "ind_krydsende",
+   "form_no": 131,
+   "legacy_col": 132,
+   "module": 4,
+   "type": "yes_no",
+   "text": "Jeg er direktør i et selskab, hvor der er krydsende ledelsesrepræsentation med selskabet?",
+   "chapter": "ch4",
+   "theme": "Uafhængighed",
+   "subarea": null,
+   "required": true,
+   "scale": "yes_no",
+   "report": {
+    "use": "count_yes",
+    "slides": [
+     34
+    ]
+   },
+   "text_issues": [
+    "krydsende ledelsesrepræsentation (legacy wording: ledelses-representation)"
+   ]
+  },
+  {
+   "id": "ind_12aar",
+   "form_no": 132,
+   "legacy_col": 133,
+   "module": 4,
+   "type": "yes_no",
+   "text": "Jeg har været medlem af bestyrelsen i mere end 12 år?",
+   "chapter": "ch4",
+   "theme": "Uafhængighed",
+   "subarea": null,
+   "required": true,
+   "scale": "yes_no",
+   "report": {
+    "use": "count_yes",
+    "slides": [
+     34
+    ]
+   }
+  },
+  {
+   "id": "ind_naer_familie",
+   "form_no": 133,
+   "legacy_col": 134,
+   "module": 4,
+   "type": "yes_no",
+   "text": "Jeg er i nær familie med personer, der vil kunne svare ’ja’ til et eller flere af ovenstående spørgsmål?",
+   "chapter": "ch4",
+   "theme": "Uafhængighed",
+   "subarea": null,
+   "required": true,
+   "scale": "yes_no",
+   "report": {
+    "use": "count_yes",
+    "slides": [
+     34
+    ]
+   }
+  },
+  {
+   "id": "peer_aktiv",
+   "form_no": 135,
+   "legacy_col": 135,
+   "legacy_block_size": 8,
+   "module": 5,
+   "type": "member_matrix",
+   "text": "Jeg oplever, at bestyrelsesmedlemmet bidrager aktivt til bestyrelsens arbejde",
+   "chapter": "ch5",
+   "theme": "De enkelte medlemmers bidrag",
+   "subarea": "Aktivt bidrag",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "peer",
+   "self_rating_included": true,
+   "report": {
+    "use": "individual_only",
+    "slides": []
+   },
+   "note": "Matrix 1-5 per member in form; the form also says 'Matrix 1-5', the scale is 1-5 in the test"
+  },
+  {
+   "id": "peer_viden",
+   "form_no": 136,
+   "legacy_col": 144,
+   "legacy_block_size": 8,
+   "module": 5,
+   "type": "member_matrix",
+   "text": "Jeg oplever, at bestyrelsesmedlemmet besidder vigtige viden og kompetencer i relation til bestyrelsens arbejde",
+   "chapter": "ch5",
+   "theme": "De enkelte medlemmers bidrag",
+   "subarea": "Viden og kompetencer",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "peer",
+   "self_rating_included": true,
+   "report": {
+    "use": "individual_only",
+    "slides": []
+   }
+  },
+  {
+   "id": "peer_deler",
+   "form_no": 137,
+   "legacy_col": 153,
+   "legacy_block_size": 8,
+   "module": 5,
+   "type": "member_matrix",
+   "text": "Jeg oplever, at bestyrelsesmedlemmet deler sine tanker, indsigter og perspektiver",
+   "chapter": "ch5",
+   "theme": "De enkelte medlemmers bidrag",
+   "subarea": "Deler tanker, indsigter og perspektiver",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "peer",
+   "self_rating_included": true,
+   "report": {
+    "use": "individual_only",
+    "slides": []
+   },
+   "note": "legacy_col 153 start (block 144-151 for form 136, 143 is a gap column; 152 is a gap; verify block 153-160)"
+  },
+  {
+   "id": "peer_samarbejde",
+   "form_no": 138,
+   "legacy_col": 162,
+   "legacy_block_size": 8,
+   "module": 5,
+   "type": "member_matrix",
+   "text": "Jeg oplever, at bestyrelsesmedlemmet er samarbejdsvilling, konstruktiv og reflekteret",
+   "chapter": "ch5",
+   "theme": "De enkelte medlemmers bidrag",
+   "subarea": "Samarbejdsvillig, konstruktiv og reflekteret",
+   "required": true,
+   "scale": "opinion_1_5",
+   "perspective": "peer",
+   "self_rating_included": true,
+   "report": {
+    "use": "individual_only",
+    "slides": []
+   },
+   "note": "legacy_col 162 start; gap column 161 unexplained; verify"
+  }
+ ],
+ "member_select_options": "from the board roster (8 members in the legacy export). Member IDs stored, not names.",
+ "ranking_notes": "Ranking stores ordered topic IDs. Legacy ranking column 58 is comma-separated text.",
+ "validation_rules": {
+  "scale_values": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "scale_zero_policy": "Form must enforce 1-5 (Typeform scale set to 1-5). Legacy import: 0 on a 1-5 item is stored as missing and not averaged (decision 2026-10-31).",
+  "yes_no_values": [
+   0,
+   1
+  ],
+  "required_unless_hidden": true,
+  "hidden_by_condition_stored_as": "missing (never 0)"
+ }
+}
